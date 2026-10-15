@@ -1,0 +1,1382 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+/* 1. VARIABLES */
+:root {
+    --navy: #073763;
+    --navy-dark: #052944;
+    --blue: #0c638b;
+    --blue-light: #dff1f8;
+    --aqua: #8ed4df;
+    --gold: #d5b477;
+    --gold-light: #f3e6c8;
+    --white: #ffffff;
+    --cream: #fbfaf6;
+    --text: #344956;
+    --muted: #738590;
+    --border: #e4edf0;
+
+    --sidebar-width: 250px;
+    --radius: 18px;
+    --shadow: 0 12px 35px rgba(7, 55, 99, 0.09);
+}
+
+/* 2. RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 24px;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.85;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+::selection {
+    color: var(--white);
+    background: var(--blue);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 4px;
+}
+
+/* ========================================
+   3. SIDEBAR
+   ======================================== */
+
+.sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+
+    width: var(--sidebar-width);
+    height: 100vh;
+    overflow-y: auto;
+
+    color: var(--white);
+
+    background: linear-gradient(
+        180deg,
+        var(--navy-dark),
+        var(--navy) 60%,
+        #0c5875
+    );
+
+    box-shadow: 5px 0 25px rgba(5, 41, 68, 0.12);
+}
+
+/* Logo */
+.sidebar-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 28px 20px 25px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+
+    text-align: center;
+}
+
+.sidebar-logo img {
+    width: 76px;
+    height: 76px;
+    margin-bottom: 8px;
+    object-fit: contain;
+}
+
+.sidebar-logo h2 {
+    font-size: 31px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.2;
+}
+
+.sidebar-logo p {
+    color: var(--gold-light);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.sidebar-logo > span {
+    margin-top: 5px;
+    color: #b9d9e7;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+/* Main navigation */
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 24px 14px;
+}
+
+.side-link {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    min-height: 47px;
+    padding: 11px 15px;
+
+    border: 0;
+    border-radius: 10px;
+
+    color: #e7f2f7;
+    background: transparent;
+
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.side-link:hover,
+.side-link.active {
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.side-link.active::before {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    left: 0;
+
+    width: 3px;
+    border-radius: 5px;
+    background: var(--gold);
+}
+
+.side-btn {
+    justify-content: flex-start;
+}
+
+.side-btn .arrow {
+    margin-left: auto;
+    font-size: 15px;
+    transition: transform 0.25s ease;
+}
+
+.side-dropdown.open .side-btn .arrow {
+    transform: rotate(180deg);
+}
+
+/* Submenu */
+.side-submenu {
+    display: none;
+    padding: 5px 0 6px 16px;
+}
+
+.side-dropdown.open .side-submenu {
+    display: block;
+    animation: submenuIn 0.25s ease;
+}
+
+.side-submenu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 3px 0;
+    padding: 9px 12px;
+
+    border-radius: 8px;
+    color: #c8e0eb;
+    font-size: 13px;
+
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.side-submenu a:hover,
+.side-submenu a.active {
+    color: var(--white);
+    background: rgba(213, 180, 119, 0.18);
+}
+
+@keyframes submenuIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sidebar social links */
+.sidebar-bottom {
+    margin-top: auto;
+    padding: 20px 15px 24px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.13);
+    text-align: center;
+}
+
+.sidebar-bottom > p {
+    margin-bottom: 13px;
+    color: #b9d9e7;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.social-icons a {
+    display: grid;
+    place-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 50%;
+
+    font-size: 15px;
+    transition: 0.25s ease;
+}
+
+.social-icons a:hover {
+    color: var(--navy);
+    background: var(--gold-light);
+    border-color: var(--gold-light);
+    transform: translateY(-3px);
+}
+
+.sidebar-bottom small {
+    color: #b9d9e7;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+/* ========================================
+   4. MAIN CONTENT
+   ======================================== */
+
+.main-content {
+    min-height: 100vh;
+    margin-left: var(--sidebar-width);
+}
+
+/* ========================================
+   5. RESTAURANT HERO
+   ======================================== */
+
+.restaurant-hero {
+    position: relative;
+    isolation: isolate;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 660px;
+    overflow: hidden;
+
+    color: var(--white);
+    background: var(--navy-dark);
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 30, 51, 0.91) 0%,
+            rgba(3, 40, 65, 0.76) 48%,
+            rgba(3, 40, 65, 0.15) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(3, 30, 51, 0.4),
+            transparent 40%
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+
+    width: min(900px, 100%);
+    padding: 100px 7%;
+}
+
+.hero-subtitle {
+    margin-bottom: 20px;
+
+    color: var(--gold-light);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.hero-content h1 {
+    margin: 0;
+
+    color: var(--white);
+    font-size: clamp(45px, 7vw, 82px);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 span {
+    color: var(--gold-light);
+}
+
+.hero-line {
+    width: 85px;
+    height: 3px;
+    margin: 25px 0;
+    background: var(--gold);
+}
+
+.hero-description {
+    max-width: 620px;
+
+    color: #e4eff4;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 28px;
+    padding: 12px 23px;
+
+    border: 1px solid var(--gold-light);
+    border-radius: 5px;
+
+    color: var(--navy-dark);
+    background: var(--gold-light);
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    color: var(--white);
+    background: transparent;
+    transform: translateY(-3px);
+}
+
+/* ========================================
+   6. SECTION HEADINGS
+   ======================================== */
+
+.section-eyebrow {
+    margin-bottom: 10px;
+
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.title-line {
+    width: 62px;
+    height: 3px;
+    margin: 19px auto;
+
+    border-radius: 5px;
+    background: linear-gradient(90deg, var(--gold), var(--aqua));
+}
+
+.section-heading {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    color: var(--navy);
+    font-size: clamp(25px, 3vw, 35px);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.section-description {
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* ========================================
+   7. RESTAURANT INTRO
+   ======================================== */
+
+.restaurant-intro {
+    padding: 90px 6%;
+    background: var(--white);
+}
+
+.intro-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    color: #485563;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.95;
+}
+
+.intro-inner > .section-eyebrow {
+    text-align: center;
+}
+
+.intro-inner > h2 {
+    color: var(--navy);
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.intro-inner > .title-line {
+    margin: 22px auto;
+}
+
+.intro-inner > p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.intro-inner > p strong {
+    color: var(--navy);
+    font-weight: 500;
+}
+
+/* Location banner */
+.intro-location {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 150px;
+    margin: 30px 0;
+    padding: 28px 32px;
+    overflow: hidden;
+
+    border-left: 5px solid var(--gold);
+    border-radius: 12px;
+
+    color: var(--white);
+
+    background: linear-gradient(
+        110deg,
+        rgba(5, 41, 68, 0.96),
+        rgba(12, 99, 139, 0.86)
+    );
+}
+
+.intro-location h3 {
+    margin: 0 0 5px;
+
+    color: var(--white);
+    font-size: clamp(23px, 3vw, 32px);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.intro-location p {
+    margin: 0;
+
+    color: var(--gold-light);
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+/* Quote */
+.intro-motto {
+    margin: 30px 0;
+    padding: 25px 28px;
+
+    border-left: 4px solid var(--gold);
+    border-radius: 0 10px 10px 0;
+
+    color: var(--navy);
+    background: #f4f7f8;
+}
+
+.intro-motto > span {
+    display: block;
+    margin-bottom: 12px;
+
+    color: #a17b3e;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.intro-motto > p {
+    margin: 0;
+
+    color: var(--navy);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+/* Intro subheadings */
+.intro-subheading {
+    position: relative;
+
+    margin: 32px 0 12px;
+    padding-left: 15px;
+
+    color: var(--navy);
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.intro-subheading::before {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    bottom: 7px;
+    left: 0;
+
+    width: 4px;
+    border-radius: 5px;
+    background: var(--gold);
+}
+
+/* ========================================
+   8. FOOD CULTURE HIGHLIGHTS
+   ======================================== */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+
+    max-width: 1200px;
+    margin: 55px auto 0;
+}
+
+.feature-card {
+    padding: 30px 24px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    background: var(--white);
+    text-align: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    margin-bottom: 12px;
+    font-size: 36px;
+}
+
+.feature-card h3 {
+    margin-bottom: 8px;
+
+    color: var(--navy);
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.feature-card p {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+/* ========================================
+   9. RESTAURANT LIST
+   ======================================== */
+
+.restaurant-list {
+    padding: 90px 5%;
+    background: #f4f7f8;
+}
+
+.restaurant-list .section-heading {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.restaurant-list .section-heading h2 {
+    color: var(--navy);
+    font-size: clamp(25px, 3vw, 35px);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.restaurant-list .section-heading .title-line {
+    margin: 19px auto;
+}
+
+.restaurant-list .section-description {
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* One restaurant per row */
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   10. RESTAURANT CARDS
+   ======================================== */
+
+.restaurant-card {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    align-items: stretch;
+
+    min-width: 0;
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    background: var(--white);
+    box-shadow: 0 5px 20px rgba(7, 55, 99, 0.05);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+/* Image */
+.restaurant-card-image {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    overflow: hidden;
+
+    background: #dce7ec;
+}
+
+.restaurant-card-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+.restaurant-card:hover .restaurant-card-image img {
+    transform: scale(1.04);
+}
+
+/* Number badge */
+.restaurant-number {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+    display: grid;
+    place-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+
+    color: var(--white);
+    background: rgba(5, 41, 68, 0.85);
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Category badge */
+.restaurant-tag {
+    position: absolute;
+    top: 16px;
+    right: 14px;
+
+    padding: 7px 12px;
+    border-radius: 5px;
+
+    color: var(--navy);
+    background: var(--gold-light);
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* Card content */
+.restaurant-card-content {
+    align-self: center;
+    min-width: 0;
+    padding: 32px;
+}
+
+.restaurant-category {
+    margin-bottom: 8px;
+
+    color: #a17b3e;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.restaurant-card-content h3 {
+    margin-bottom: 10px;
+
+    color: var(--navy);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+}
+
+/* Ratings */
+.restaurant-rating {
+    margin-bottom: 16px;
+
+    color: #c39131;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.restaurant-rating strong {
+    margin-left: 6px;
+    color: var(--navy);
+}
+
+/* Description */
+.restaurant-description {
+    margin-bottom: 20px;
+
+    color: #56636e;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+/* Restaurant details */
+.restaurant-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin: 18px 0;
+    padding: 16px 0;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.restaurant-details p {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    align-items: start;
+    gap: 8px;
+
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.restaurant-details p strong {
+    min-width: 0;
+
+    color: var(--navy);
+    font-weight: 500;
+}
+
+.restaurant-details p span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Recommended dishes */
+.restaurant-dishes {
+    margin-top: 17px;
+}
+
+.restaurant-dishes h4 {
+    margin: 22px 0 12px;
+
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dish-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.dish-list span {
+    padding: 5px 9px;
+
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    color: #536772;
+    background: #f8fbfc;
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* Map link */
+.restaurant-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    width: 100%;
+    min-height: 44px;
+    margin-top: 24px;
+    padding: 11px 15px;
+
+    border: 1px solid var(--navy);
+    border-radius: 6px;
+
+    color: var(--white);
+    background: var(--navy);
+
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.restaurant-map:hover {
+    border-color: var(--gold);
+    color: var(--navy);
+    background: var(--gold-light);
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   11. ALTERNATING IMAGE LAYOUT
+   ======================================== */
+
+/* Odd cards: image left, content right */
+.restaurant-card:nth-child(odd) .restaurant-card-image {
+    order: 1;
+}
+
+.restaurant-card:nth-child(odd) .restaurant-card-content {
+    order: 2;
+}
+
+/* Even cards: content left, image right */
+.restaurant-card:nth-child(even) .restaurant-card-image {
+    order: 2;
+}
+
+.restaurant-card:nth-child(even) .restaurant-card-content {
+    order: 1;
+}
+
+/* ========================================
+   12. FOOTER
+   ======================================== */
+
+.history-footer {
+    padding: 38px 20px 25px;
+
+    color: var(--white);
+    background: #031f35;
+
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.footer-tagline {
+    margin-top: 5px;
+
+    color: #c3dbe6;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.footer-divider {
+    width: 45px;
+    height: 2px;
+    margin: 20px auto;
+    background: var(--gold);
+}
+
+.copyright {
+    color: #a9c4d0;
+    font-size: 11px;
+}
+
+/* ========================================
+   13. BACK TO TOP
+   ต้องตรงกับ id="backTop"
+   และ class="back-top" ใน HTML
+   ======================================== */
+
+.back-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1100;
+
+    display: grid;
+    place-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 50%;
+
+    color: var(--white);
+    background: var(--navy);
+
+    font-size: 26px;
+    line-height: 1;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0.25s ease;
+}
+
+.back-top.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.back-top:hover {
+    color: var(--navy);
+    background: var(--gold-light);
+}
+
+/* ========================================
+   14. TABLET
+   ======================================== */
+
+@media (max-width: 1000px) {
+    .restaurant-card-content {
+        padding: 24px;
+    }
+
+    .restaurant-card-image,
+    .restaurant-card-image img {
+        min-height: 400px;
+    }
+}
+
+/* ========================================
+   15. SMALL DESKTOP / MOBILE NAVIGATION
+   ======================================== */
+
+@media (max-width: 850px) {
+    :root {
+        --sidebar-width: 0px;
+    }
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+        height: auto;
+        overflow: visible;
+    }
+
+    .sidebar-logo {
+        padding: 15px 12px;
+    }
+
+    .sidebar-logo img {
+        width: 53px;
+        height: 53px;
+    }
+
+    .sidebar-logo h2 {
+        font-size: 23px;
+    }
+
+    .sidebar-menu {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 5px;
+
+        padding: 12px;
+    }
+
+    .side-link {
+        min-height: 42px;
+        padding: 9px 11px;
+        font-size: 12px;
+    }
+
+    .side-submenu {
+        padding-left: 7px;
+    }
+
+    .side-submenu a {
+        font-size: 12px;
+    }
+
+    .sidebar-bottom {
+        padding: 12px;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .restaurant-hero {
+        min-height: 580px;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 80px 7%;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(
+            90deg,
+            rgba(3, 30, 51, 0.91),
+            rgba(3, 40, 65, 0.58)
+        );
+    }
+
+    .restaurant-intro {
+        padding: 65px 5%;
+    }
+
+    .intro-inner {
+        font-size: 13px;
+    }
+
+    .intro-location {
+        min-height: 130px;
+        padding: 24px;
+    }
+
+    .intro-motto {
+        padding: 22px;
+    }
+
+    .intro-motto > p {
+        font-size: 14px;
+    }
+
+    .intro-subheading {
+        font-size: 19px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 35px;
+    }
+
+    .restaurant-list {
+        padding: 65px 5%;
+    }
+
+    .restaurant-grid {
+        gap: 24px;
+    }
+
+    .restaurant-card {
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    }
+
+    .restaurant-card-image,
+    .restaurant-card-image img {
+        min-height: 380px;
+    }
+
+    .restaurant-card-content {
+        padding: 20px;
+    }
+
+    .restaurant-card-content h3 {
+        font-size: 20px;
+    }
+
+    .restaurant-details p {
+        grid-template-columns: 80px minmax(0, 1fr);
+        gap: 6px;
+    }
+
+    .back-top {
+        right: 16px;
+        bottom: 16px;
+    }
+}
+
+/* ========================================
+   16. MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+    .restaurant-hero {
+        min-height: 530px;
+    }
+
+    .hero-content {
+        padding: 70px 24px;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .restaurant-intro {
+        padding: 55px 20px;
+    }
+
+    .intro-inner > h2 {
+        font-size: 27px;
+    }
+
+    .intro-inner > p {
+        text-align: left;
+    }
+
+    .intro-location {
+        min-height: 115px;
+        margin: 24px 0;
+        padding: 20px;
+    }
+
+    .intro-location h3 {
+        font-size: 23px;
+    }
+
+    .intro-location p {
+        font-size: 11px;
+    }
+
+    .intro-motto {
+        margin: 24px 0;
+        padding: 18px;
+    }
+
+    .intro-motto > p {
+        font-size: 13px;
+    }
+
+    .intro-subheading {
+        margin-top: 27px;
+        font-size: 18px;
+    }
+
+    .restaurant-list {
+        padding: 55px 20px;
+    }
+
+    .restaurant-list .section-heading {
+        margin-bottom: 35px;
+        padding: 0;
+    }
+
+    .restaurant-list .section-heading h2 {
+        font-size: 27px;
+    }
+
+    /* Mobile: one card per row */
+    .restaurant-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .restaurant-card {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    /* All images appear above the content on mobile */
+    .restaurant-card:nth-child(odd) .restaurant-card-image,
+    .restaurant-card:nth-child(even) .restaurant-card-image {
+        order: 1;
+    }
+
+    .restaurant-card:nth-child(odd) .restaurant-card-content,
+    .restaurant-card:nth-child(even) .restaurant-card-content {
+        order: 2;
+    }
+
+    .restaurant-card-image,
+    .restaurant-card-image img {
+        width: 100%;
+        height: 250px;
+        min-height: 250px;
+    }
+
+    .restaurant-card-content {
+        padding: 22px;
+    }
+
+    .restaurant-card-content h3 {
+        font-size: 22px;
+    }
+
+    .restaurant-description {
+        font-size: 13px;
+    }
+
+    .restaurant-details p {
+        grid-template-columns: 85px minmax(0, 1fr);
+        font-size: 11px;
+    }
+
+    .restaurant-dishes h4 {
+        margin-top: 20px;
+    }
+
+    .dish-list {
+        gap: 6px;
+    }
+
+    .dish-list span {
+        font-size: 11px;
+    }
+
+    .history-footer {
+        padding: 30px 16px 22px;
+    }
+
+    .footer-logo {
+        font-size: 20px;
+    }
+
+    .footer-tagline {
+        font-size: 10px;
+    }
+}
+
+/* ========================================
+   17. ACCESSIBILITY
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

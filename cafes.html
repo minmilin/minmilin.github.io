@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="รวมคาเฟ่น่านั่งในศรีราชา พร้อมเครื่องดื่ม ขนม บรรยากาศดี และมุมถ่ายรูป">
+    <title>MA SRI - RACHA | Café</title>
+
+    <!-- FONT KANIT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="cafes.css">
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <a href="index.html" class="sidebar-logo">
+            <img src="img/logo.png" alt="โลโก้ศรีราชา">
+            <h2>MA</h2>
+            <p>SRI - RACHA</p>
+            <span>CAFÉ GUIDE</span>
+        </a>
+
+        <nav class="sidebar-menu" aria-label="เมนูหลัก">
+            <a href="index.html" class="side-link">
+                🏠 <span>Home</span>
+            </a>
+
+            <div class="side-dropdown">
+                <button type="button" class="side-link side-btn"
+                    aria-expanded="false" aria-controls="story-submenu">
+                    📖 <span>Our Story</span>
+                    <span class="arrow">▾</span>
+                </button>
+                <div class="side-submenu" id="story-submenu">
+                    <a href="history.html">📜 <span>History</span></a>
+                </div>
+            </div>
+
+            <div class="side-dropdown open">
+                <button type="button" class="side-link side-btn active"
+                    aria-expanded="true" aria-controls="destination-submenu">
+                    📍 <span>Destination</span>
+                    <span class="arrow">▾</span>
+                </button>
+                <div class="side-submenu" id="destination-submenu">
+                    <a href="travel.html">🏝️ <span>Travel</span></a>
+                    <a href="hotels.html">🏨 <span>Hotels</span></a>
+                    <a href="restaurants.html">🍽️ <span>Restaurant</span></a>
+                    <a href="cafes.html" class="active" aria-current="page">
+                        ☕ <span>Café</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="video.html" class="side-link">
+                🎬 <span>Video</span>
+            </a>
+
+            <a href="contact.html" class="side-link">
+                📞 <span>Contact</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>FOLLOW OUR JOURNEY</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Pr.Srirachacity/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Facebook เทศบาลเมืองศรีราชา">ⓕ</a>
+
+                <a href="https://www.youtube.com/@srirachacity784"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="YouTube เทศบาลเมืองศรีราชา">▶</a>
+
+                <a href="https://www.srirachacity.go.th/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="เว็บไซต์เทศบาลเมืองศรีราชา">🌐</a>
+            </div>
+            <small>SRIRACHA MUNICIPALITY</small>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section class="cafe-hero">
+            <img class="hero-image" src="img/ปกคาเฟ่.png"
+                 alt="คาเฟ่และบรรยากาศการท่องเที่ยวในศรีราชา">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <p class="hero-subtitle">DISCOVER THE CAFÉ CULTURE OF</p>
+                <h1>CAFÉ<br><span>SRIRACHA</span></h1>
+                <div class="hero-line"></div>
+
+                <h2>ตระเวนเที่ยวคาเฟ่ในศรีราชา</h2>
+
+                <p class="hero-description">
+                    รวมร้านคาเฟ่น่านั่ง บรรยากาศดี เครื่องดื่มและขนมอร่อย
+                    พร้อมมุมถ่ายรูปที่เหมาะกับทุกสไตล์
+                </p>
+
+                <a href="#cafes" class="hero-btn">
+                    ☕ Café Hopping<span>➣</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="cafe-intro" id="cafe-guide">
+            <div class="intro-inner">
+                <p class="section-eyebrow">SRI RACHA CAFÉ GUIDE</p>
+                <div class="title-line"></div>
+
+                <h2>Café Hopping in Sriracha</h2>
+
+                <p>
+                    ศรีราชาไม่ได้มีเพียงสถานที่ท่องเที่ยว
+                    และร้านอาหารทะเลเท่านั้น แต่ยังมีคาเฟ่หลากหลายสไตล์
+                    ที่ซ่อนตัวอยู่ทั่วเมือง
+                </p>
+
+                <p>
+                    ตั้งแต่คาเฟ่มินิมอล คาเฟ่สไตล์เกาหลี คาเฟ่ติดทะเล
+                    ไปจนถึงร้านกาแฟในสวน ที่เหมาะสำหรับนั่งพักผ่อน
+                    ทำงาน ถ่ายรูป หรือใช้เวลาอยู่กับเพื่อนและคนพิเศษ
+                </p>
+            </div>
+        </section>
+
+        <section class="cafe-list" id="cafes">
+            <div class="section-heading">
+                <p class="section-eyebrow">CAFÉS IN SRIRACHA</p>
+                <div class="title-line"></div>
+                <p class="section-description">
+                    รวมคาเฟ่หลากหลายสไตล์สำหรับทุกวันพักผ่อน
+                </p>
+            </div>
+
+            <div class="cafe-grid">
+                <article class="cafe-card" id="baan-bar-fae">
+                    <div class="cafe-cover">
+                        <img src="img/บาร์แฟ.png" 
+                        alt="Baan Bar Fae" loading="lazy">
+                        <span class="cafe-number">01</span>
+                    </div>
+
+                    <div class="cafe-content">
+                        <p class="cafe-category">
+                            GARDEN • NATURE • PET FRIENDLY
+                        </p>
+                        <h3>Baan Bar Fae</h3>
+                        <p class="cafe-rating">⭐⭐⭐⭐⭐ 4.9 / 5</p>
+
+                        <p class="cafe-description">
+                            คาเฟ่บรรยากาศอบอุ่นริมทะเล โทนขาวดำและไม้
+                            มีมุมชมวิวทะเล เหมาะกับการพักผ่อนและถ่ายรูป
+                        </p>
+
+                        <div class="cafe-info-grid">
+                            <div class="info-box">
+                                <h4>🕐 เปิด–ปิด</h4>
+                                <p>จันทร์-ศุกร์ 10:00 – 19:00 น.</p>
+                                <p>เสาร์-อาทิตย์ 10:00 – 19:00 น.</p>
+                                <p>ไม่มีหยุดประจำวัน</p>
+                            </div>
+
+                            <div class="info-box">
+                                <h4>✨ เหมาะสำหรับ</h4>
+                                <ul>
+                                    <li>คนที่ชอบคาเฟ่ริมทะเล</li>
+                                    <li>สายถ่ายรูป คนรักธรรมชาติ</li>
+                                    <li>ครอบครัว คู่รัก และคนที่พาสัตว์เลี้ยงมาเที่ยว</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>🐶 สัตว์เลี้ยง</h4>
+                            <p>ต้อนรับสัตว์เลี้ยง (Pet-Friendly)</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>🏷️ ราคา</h4>
+                            <p>เครื่องดื่ม: เริ่มต้นที่ 75 - 130 บาท</p>
+                            <p>ของหวาน เบเกอรี: เริ่มต้นที่ 89 – 130 บาท</p>
+                        </div>
+
+                        <a class="map-link"
+                           href="https://www.google.com/maps/search/?api=1&query=Baan+Bar+Fae+Sriracha"
+                           target="_blank" rel="noopener noreferrer">
+                            📍 ดูทำเลร้าน
+                        </a>
+
+                        <div class="menu-group">
+                            <h4>🥤 เมนูเครื่องดื่ม</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/ส้มบาร์.png" 
+                                    alt="Orange Black" loading="lazy">
+                                    <p>🥇Orange Black</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/โซดา.png" 
+                                    alt="Calamansi soda" loading="lazy">
+                                    <p>🥈Calamansi soda</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/Matcha.png" 
+                                    alt="Matcha & Coconut Cloud Farm" loading="lazy">
+                                    <p>🥉Matcha Coconut Cloud Farm</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="menu-group">
+                            <h4>🍰 เมนูขนม</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/เค้กไหม้.png" 
+                                    alt="Cheesecake" loading="lazy">
+                                    <p>🥇Cheesecake</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ช็อกเชอร์.png" 
+                                    alt="Chocolate Cake" loading="lazy">
+                                    <p>🥈Chocolate Cake</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ส้มส้ม.png" 
+                                    alt="Orange Cake" loading="lazy">
+                                    <p>🥉Orange Cake</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 02 MURF -->
+                <article class="cafe-card" id="murf">
+                    <div class="cafe-cover">
+                        <img src="img/ปกM.png" 
+                        alt="MURF. Cafe" loading="lazy">
+                        <span class="cafe-number">02</span>
+                    </div>
+
+                    <div class="cafe-content">
+                        <p class="cafe-category">SPECIALTY COFFEE</p>
+                        <h3>MURF.</h3>
+                        <p class="cafe-rating">⭐⭐⭐⭐⭐ 4.8 / 5</p>
+
+                        <p class="cafe-description">
+                            ร้านกาแฟเล็กๆ ซ่อนตัวอยู่แถวเกาะลอย
+                            ตกแต่งสไตล์ Wabi-Sabi โฮมมี่อบอุ่น
+                            บรรยากาศเงียบสงบเหมาะแก่การพักผ่อน
+                        </p>
+
+                        <div class="cafe-info-grid">
+                            <div class="info-box">
+                                <h4>🕐 เปิด–ปิด</h4>
+                                <p>จันทร์, พุธ-ศุกร์ 07:30 – 16:00 น.</p>
+                                <p>เสาร์-อาทิตย์ 07:30 – 17:00 น.</p>
+                                <p>หยุดประจำวันอังคาร</p>
+                            </div>
+
+                            <div class="info-box">
+                                <h4>✨ เหมาะสำหรับ</h4>
+                                <ul>
+                                    <li>สายถ่ายรูปมินิมอล</li>
+                                    <li>คนที่อยากนั่งชิลหลังออกกำลังกาย</li>
+                                    <li>คนรักสัตว์ที่พาสัตว์เลี้ยงมาเปลี่ยนบรรยากาศ</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>🐶 สัตว์เลี้ยง</h4>
+                            <p>ต้อนรับสัตว์เลี้ยง (Pet-Friendly)</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>🏷️ ราคา</h4>
+                            <p>เครื่องดื่ม: เริ่มต้นที่ 65 - 160 บาท</p>
+                            <p>ของหวาน เบเกอรี: เริ่มต้นที่ 60 – 115 บาท</p>
+                        </div>
+
+                        <a class="map-link"
+                           href="https://www.google.com/maps/search/?api=1&query=MURF+Cafe+Sriracha"
+                           target="_blank" rel="noopener noreferrer">
+                            📍 ดูทำเลร้าน
+                        </a>
+
+                        <div class="menu-group">
+                            <h4>🥤 เมนูเครื่องดื่ม</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/ชาไท.png" 
+                                    alt="Thai Tea Coconut Cloudy" loading="lazy">
+                                    <p>🥇Thai Tea Coconut Cloudy</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ME.png" 
+                                    alt="Matcha Coconut / Espresso Coconut" loading="lazy">
+                                    <p>🥈Matcha Coconut / Espresso Coconut</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/กาแฟนม.png" 
+                                    alt="Dirty Coffee" loading="lazy">
+                                    <p>🥉Dirty Coffee</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="menu-group">
+                            <h4>🍰 เมนูขนม</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/ครัว.png" alt="Homemade Croissant" loading="lazy">
+                                    <p>🥇Homemade Croissant</p>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="img/คาเน่.png" alt="Cnelé" loading="lazy">
+                                    <p>🥈Cnelé (คาเนเล่)</p>
+                                </div>
+                                <div class="menu-item">
+                                    <img src="img/ชีสเค้ก.png" alt="Basque Burnt Cheesecake" loading="lazy">
+                                    <p>🥉Basque Burnt Cheesecake</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 03 THE MOOD -->
+                <article class="cafe-card" id="the-mood">
+                    <div class="cafe-cover">
+                        <img src="img/มู๊ด.png" 
+                        alt="The Mood" loading="lazy">
+                        <span class="cafe-number">03</span>
+                    </div>
+
+                    <div class="cafe-content">
+                        <p class="cafe-category">
+                            COZY • MINIMALIST • VIBE</p>
+                        <h3>The Mood.</h3>
+                        <p class="cafe-rating">⭐⭐⭐⭐⭐ 4.8 / 5</p>
+
+                        <p class="cafe-description">
+                            แนว Good Mood Good Coffee เน้นบรรยากาศแบบสบายๆ
+                            อบอุ่น ละมุนตา
+                        </p>
+
+                        <div class="cafe-info-grid">
+                            <div class="info-box">
+                                <h4>🕐 เปิด–ปิด</h4>
+                                <p>จันทร์-ศุกร์ 07:30 – 17:00 น.</p>
+                                <p>เสาร์-อาทิตย์ 07:30 – 17:00 น.</p>
+                                <p>ไม่มีหยุดประจำวัน</p>
+                            </div>
+
+                            <div class="info-box">
+                                <h4>✨ เหมาะสำหรับ</h4>
+                                <ul>
+                                    <li>สายคาเฟ่/ถ่ายรูป 
+                                        สไตล์มินิมอลเกาหลี มุมกระจกโค้งและแสงสวย ถ่ายรูปคอนเทนต์ปัง
+                                    </li>
+
+                                    <li>สายคาเฟ่ฮอปปิ้ง/กาแฟ 
+                                        เหมาะมานั่งจิบเครื่องดื่มชิลๆ พักผ่อนในวันสบาย
+                                    </li>
+
+                                    <li>สายทำงาน/อ่านหนังสือ 
+                                        บรรยากาศสงบ นั่งสบาย มีมุมเคลียร์งานเพลินๆ
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>🐶 สัตว์เลี้ยง</h4>
+                            <p>หากต้องการพาสัตว์เลี้ยงไปด้วย แนะนำให้ติดต่อสอบถามทางร้านโดยตรง</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>🏷️ ราคา</h4>
+                            <p>เครื่องดื่ม: เริ่มต้น 60 - 120บาท</p>
+                            <p>ของหวาน เบเกอรี: เริ่มต้นที่ 35 – 200 บาท</p>
+                            <p>อาหาร เมนูทานเล่น: เริ่มต้นที่ 60 – 140 บาท</p>
+                        </div>
+
+                        <a class="map-link"
+                           href="https://www.google.com/maps/search/?api=1&query=The+Mood+Cafe+Sriracha"
+                           target="_blank" rel="noopener noreferrer">
+                            📍 ดูทำเลร้าน
+                        </a>
+
+                        <div class="menu-group">
+                            <h4>🥤 เมนูเครื่องดื่ม</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/แฟเปิ้ล.png" 
+                                    alt="Americano Apple" loading="lazy">
+                                    <p>🥇Americano Apple</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ส้มเขียว.png" 
+                                    alt="Matcha Orange" loading="lazy">
+                                    <p>🥈Matcha Orange</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ดอกเหลือง.png" 
+                                    alt="Osmanthus" loading="lazy">
+                                    <p>🥉Osmanthus</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="menu-group">
+                            <h4>🍰 เมนูขนม</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/โดนัท.png" 
+                                    alt="Doughnut" loading="lazy">
+                                    <p>🥇Doughnut</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/เค้กชาไท.png" 
+                                    alt="Thai Tea Cream Cake" loading="lazy">
+                                    <p>🥈Thai Tea Cream Cake</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ทาร์ตไข่.png" 
+                                    alt="Egg Tart" loading="lazy">
+                                    <p>🥉Egg Tart</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="menu-group">
+                            <h4>🍝 เมนูอาหาร</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/ไข่ทะ.png" 
+                                    alt="Pan-Fried Eggs" loading="lazy">
+                                    <p>🥇Pan-Fried Eggs</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ไก่.png" 
+                                    alt="Fried Chicken Wings" loading="lazy">
+                                    <p>🥈Fried Chicken Wings</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/เอบิ.png" 
+                                    alt="Ebi Roll" loading="lazy">
+                                    <p>🥉Ebi Roll</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 04 KAMON COFFEE -->
+                <article class="cafe-card" id="kamon-coffee">
+                    <div class="cafe-cover">
+                        <img src="img/ปกกลมล.png" 
+                        alt="Kamon Coffee" loading="lazy">
+                        <span class="cafe-number">04</span>
+                    </div>
+
+                    <div class="cafe-content">
+                        <p class="cafe-category">COZY • MINIMAL</p>
+                        <h3>Kamon Coffee</h3>
+                        <p class="cafe-rating">⭐⭐⭐⭐⭐ 4.7 / 5</p>
+
+                        <p class="cafe-description">
+                            คาเฟ่มินิมอลโทนอบอุ่น ร่มรื่นด้วยต้นไม้ใหญ่กลางร้าน
+                            บรรยากาศโปร่งสบาย แสงสวย ถ่ายรูปปังทุกมุม
+                            ใกล้สวนสุขภาพเกาะลอย
+                        </p>
+
+                        <div class="cafe-info-grid">
+                            <div class="info-box">
+                                <h4>🕐 เปิด–ปิด</h4>
+                                <p>จันทร์-อังคาร 07.00 – 17.00 น.</p>
+                                <p>พฤหัสบดี-อาทิตย์ 07:30 – 17:00 น.</p>
+                                <p>หยุดประจำวันพุธ</p>
+                            </div>
+
+                            <div class="info-box">
+                                <h4>✨ เหมาะสำหรับ</h4>
+                                <ul>
+                                    <li>สายคาเฟ่ที่ชอบถ่ายรูปเก็บบรรยากาศมินิมอล โทนสีอบอุ่น</li>
+                                    <li>คนที่อยากนั่งชิลหลังออกกำลังกาย</li>
+                                    <li>คนรักชาเขียว/มัทฉะ และกาแฟคุณภาพ</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>🐶 สัตว์เลี้ยง</h4>
+                            <p>หากต้องการพาสัตว์เลี้ยงไปด้วย แนะนำให้ติดต่อสอบถามทางร้านโดยตรง</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>🏷️ ราคา</h4>
+                            <p>เครื่องดื่ม: เริ่มต้นที่ 60 - 120 บาท</p>
+                            <p>ของหวาน เบเกอรี: เริ่มต้นที่ 35 – 200 บาท</p>
+                        </div>
+
+                        <a class="map-link"
+                           href="https://www.google.com/maps/search/?api=1&query=Kamon+Coffee+ศรีราชา"
+                           target="_blank" rel="noopener noreferrer">
+                            📍 ดูทำเลร้าน
+                        </a>
+
+                        <div class="menu-group">
+                            <h4>🥤 เมนูเครื่องดื่ม</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/แฟดำ.png" 
+                                    alt="Americano" loading="lazy">
+                                    <p>🥇Americano</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ชาเขียว.png" 
+                                    alt="Clear Matcha" loading="lazy">
+                                    <p>🥈Clear Matcha</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/คานม.png" 
+                                    alt="Caramel Milk" loading="lazy">
+                                    <p>🥉Caramel Milk</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="menu-group">
+                            <h4>🍰 เมนูขนม</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/ขนมกมล.png" 
+                                    alt="Sourdough Cream Cheese with Mixed Berries" loading="lazy">
+                                    <p>🥇SOURDOUGH CREAM CHEESE WITH MIXED BERRIES</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ขนมคุกกี้.png" 
+                                    alt="Scone with Yuzu Orange Jam" loading="lazy">
+                                    <p>🥈Scone with Yuzu Orange Jam</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/เค้กส้ม.png" 
+                                    alt="Yuzu Orange Cake" loading="lazy">
+                                    <p>🥉Yuzu Orange Cake</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 05 CHOTI & CHALO -->
+                <article class="cafe-card" id="choti-chalo">
+                    <div class="cafe-cover">
+                        <img src="img/ปกเชาว์.png" 
+                        alt="Choti & Chalo" loading="lazy">
+                        <span class="cafe-number">05</span>
+                    </div>
+
+                    <div class="cafe-content">
+                        <p class="cafe-category">VINTAGE • OLD-TOWN • CHIC</p>
+                        <h3>Choti Chalo</h3>
+                        <p class="cafe-rating">⭐⭐⭐⭐⭐ 4.6 / 5</p>
+
+                        <p class="cafe-description">
+                            คาเฟ่แนว Old Town วินเทจสุดชิคใจกลางตึกเก่ารีโนเวท
+                            ฟีลย้อนยุคผสมผสานความร่วมสมัย แนวสตรีทและตึกเก่าเก๋ๆ
+                        </p>
+
+                        <div class="cafe-info-grid">
+                            <div class="info-box">
+                                <h4>🕐 เปิด–ปิด</h4>
+                                <p>วันจันทร์–วันศุกร์ 08:00 – 18:00 น.</p>
+                                <p>วันเสาร์–วันอาทิตย์ 08:30 – 19:00 น.</p>
+                                <p>ไม่มีหยุดประจำวัน</p>
+                            </div>
+
+                            <div class="info-box">
+                                <h4>✨ เหมาะสำหรับ</h4>
+                                <ul>
+                                    <li>สายคาเฟ่ที่ชอบถ่ายรูปเก็บบรรยากาศมินิมอล โทนสีอบอุ่น</li>
+                                    <li>คนที่อยากนั่งชิลหลังออกกำลังกาย</li>
+                                    <li>คนรักชาเขียว/มัทฉะ และกาแฟคุณภาพ</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>🐶 สัตว์เลี้ยง</h4>
+                            <p>หากต้องการพาสัตว์เลี้ยงไปด้วย แนะนำให้ติดต่อสอบถามทางร้านโดยตรง</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>🏷️ ราคา</h4>
+                            <p>เครื่องดื่ม: เริ่มต้น 60 – 80 บาท</p>
+                            <p>ของหวาน เบเกอรี: เริ่มต้นที่ 60 – 95 บาท</p>
+                            <p>อาหาร เมนูทานเล่น: เริ่มต้นที่ 100 – 150 บาท</p>
+                        </div>
+
+                        <a class="map-link"
+                           href="https://www.google.com/maps/search/?api=1&query=Choti+%26+Chalo+Cafe+Sriracha"
+                           target="_blank" rel="noopener noreferrer">
+                            📍 ดูทำเลร้าน
+                        </a>
+
+                        <div class="menu-group">
+                            <h4>🥤 เมนูเครื่องดื่ม</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/ส้มส้มแฟ.png" 
+                                    alt="Orange Americano" loading="lazy">
+                                    <p>🥇Orange Americano</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/นมเขียว.png" 
+                                    alt="Matcha Latte" loading="lazy">
+                                    <p>🥈Matcha Latte</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ชาไทจ้ะ.png" 
+                                    alt="Thai Tea" loading="lazy">
+                                    <p>🥉Thai Tea</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="menu-group">
+                            <h4>🍰 เมนูขนม</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/ไอติม1.png" 
+                                    alt="Shortie Toasr" loading="lazy">
+                                    <p>🥇Shortie Toasr</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ไอติม2.png" 
+                                    alt="Icecream Float" loading="lazy">
+                                    <p>🥈Icecream Float</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ไอติม3.png" 
+                                    alt="Icecream" loading="lazy">
+                                    <p>🥉Icecream</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="menu-group">
+                            <h4>🍝 เมนูอาหาร</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/ข้าวผัด.png" 
+                                    alt="American Fried Rice" loading="lazy">
+                                    <p>🥇American Fried Rice</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ไส้ชีส.png" 
+                                    alt="Hot Dog Cheese" loading="lazy">
+                                    <p>🥈Hot Dog Cheese</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ไก่ทอด.png" 
+                                    alt="Fried Chicken" loading="lazy">
+                                    <p>🥉Fried Chicken</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 06 LITTLE TOWN -->
+                <article class="cafe-card" id="little-town">
+                    <div class="cafe-cover">
+                        <img src="img/ปกลิต.png" 
+                        alt="Little Town Sriracha" loading="lazy">
+                        <span class="cafe-number">06</span>
+                    </div>
+
+                    <div class="cafe-content">
+                        <p class="cafe-category">MEDITERRANEAN HOMEY</p>
+                        <h3>Little Town Sriracha</h3>
+                        <p class="cafe-rating">⭐⭐⭐⭐⭐ 4.4 / 5</p>
+
+                        <p class="cafe-description">
+                            คาเฟ่และคอมมูนิตี้สเปซริมทะเลบรรยากาศสุดชิล
+                            บ้านสีขาวอบอุ่น ท่ามกลางสนามหญ้าและต้นไม้เขียวขจี
+                            พร้อมสะพานไม้ทอดยาวและมุมริมหาด
+                        </p>
+
+                        <div class="cafe-info-grid">
+                            <div class="info-box">
+                                <h4>🕐 เปิด–ปิด</h4>
+                                <p>อังคาร–พฤหัสบดี: 10.00 – 21.00 น.</p>
+                                <p>ศุกร์–อาทิตย์ 10.00 – 22.00 น.</p>
+                                <p>หยุดประจำวันจันทร์</p>
+                            </div>
+
+                            <div class="info-box">
+                                <h4>✨ เหมาะสำหรับ</h4>
+                                <ul>
+                                    <li>คู่รักมาดินเนอร์ชมวิวพระอาทิตย์ตก</li>
+                                    <li>แก๊งเพื่อนมานั่งชิล</li>
+                                    <li>ผู้ที่ชอบทำกิจกรรมทางน้ำอย่างพายเรือ</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>🐶 สัตว์เลี้ยง</h4>
+                            <p>สามารถพาสุนัขมาเที่ยว
+                                และเดินเล่นโซนที่ร้านกำหนดได้ทั้ง 
+                                Indoor และ Outdoor</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>🏷️ ราคา</h4>
+                            <p>เครื่องดื่ม: เริ่มต้นที่ 85 – 170 บาท</p>
+                            <p>ของหวาน เบเกอรี: เริ่มต้นที่ 90 – 150 บาท</p>
+                            <p>อาหาร เมนูทานเล่น: เริ่มต้นที่ 130 – 360 บาท</p>
+                        </div>
+
+                        <a class="map-link"
+                           href="https://www.google.com/maps/search/?api=1&query=Little+Town+Sriracha"
+                           target="_blank" rel="noopener noreferrer">
+                            📍 ดูทำเลร้าน
+                        </a>
+
+                        <div class="menu-group">
+                            <h4>🥤 เมนูเครื่องดื่ม</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/แฟส้ม.png" 
+                                    alt="Americano Orange / Yuzu" loading="lazy">
+                                    <p>🥇Americano Orange / Yuzu</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/น้ำโซดา.png" 
+                                    alt="Pink Lemonade Soda" loading="lazy">
+                                    <p>🥈Pink Lemonade Soda</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/ชาเขียวกาแฟ.png" 
+                                    alt="Matcha Latte" loading="lazy">
+                                    <p>🥉Matcha Latte</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="menu-group">
+                            <h4>🍰 เมนูขนม</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/เค้กช็อก.png" 
+                                    alt="Chocolate Fudge Cake" loading="lazy">
+                                    <p>🥇Chocolate Fudge Cake</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/เค้กมะนาว.png" 
+                                    alt="Lemon Tart / Lemon Cake" loading="lazy">
+                                    <p>🥈Lemon Tart / Lemon Cake</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/เค้กแค.png" 
+                                    alt="Carrot Cake" loading="lazy">
+                                    <p>🥉Carrot Cake</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="menu-group">
+                            <h4>🍝 เมนูอาหาร</h4>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <img src="img/สปา.png" 
+                                    alt="Spaghetti Spicy Seafood" loading="lazy">
+                                    <p>🥇Spaghetti Spicy Seafood</p>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <img src="img/เป็ด.png" 
+                                    alt="Smoked Duck Breast Salad" loading="lazy">
+                                    <p>🥈Smoked Duck Breast Salad</p>
+                                </div>
+
+                                <div class="menu-item">
+                                    <img src="img/หมึก.png" 
+                                    alt="Calamari" loading="lazy">
+                                    <p>🥉Calamari</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="cafe-footer">
+            <div class="footer-logo">CAFÉ HOPPING GUIDE</div>
+            <h2>SRIRACHA CAFÉ</h2>
+            <p class="footer-tagline">Discover • Sip • Relax • Experience</p>
+            <div class="footer-divider"></div>
+            <p class="copyright">© 2026 เว็บไซต์แนะนำสถานที่ท่องเที่ยวเมืองศรีราชา</p>
+        </footer>
+    </main>
+
+    <!-- SIDEBAR DROPDOWN -->
+    <script>
+        const dropdownButtons = document.querySelectorAll(".side-btn");
+
+        dropdownButtons.forEach(function (button) {
+            const dropdown = button.closest(".side-dropdown");
+
+            button.addEventListener("click", function () {
+                const isOpening = !dropdown.classList.contains("open");
+
+                document.querySelectorAll(".side-dropdown").forEach(function (item) {
+                    item.classList.remove("open");
+
+                    const itemButton = item.querySelector(".side-btn");
+                    if (itemButton) {
+                        itemButton.setAttribute("aria-expanded", "false");
+                    }
+                });
+
+                if (isOpening) {
+                    dropdown.classList.add("open");
+                    button.setAttribute("aria-expanded", "true");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

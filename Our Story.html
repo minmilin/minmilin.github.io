@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MA SRI - RACHA เว็บไซต์แนะนำประวัติศาสตร์ สถานที่ท่องเที่ยว โรงแรม ร้านอาหาร และคาเฟ่ในเมืองศรีราชา">
+    <title>MA SRI - RACHA | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Our Story.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <nav class="sidebar-menu" aria-label="เมนูหลัก">
+            <a href="index.html" class="side-link active" aria-current="page">
+                🏠 <span>Home</span>
+            </a>
+
+            <div class="side-dropdown">
+                <button type="button"
+                        class="side-link side-btn"
+                        aria-expanded="false"
+                        aria-controls="story-submenu">
+                    📖 <span>Our Story</span>
+                    <span class="arrow">▾</span>
+                </button>
+
+                <div class="side-submenu" id="story-submenu">
+                    <a href="history.html">📜 <span>History</span></a>
+                </div>
+            </div>
+
+            <div class="side-dropdown">
+                <button type="button"
+                        class="side-link side-btn"
+                        aria-expanded="false"
+                        aria-controls="destination-submenu">
+                    📍 <span>Destination</span>
+                    <span class="arrow">▾</span>
+                </button>
+
+                <div class="side-submenu" id="destination-submenu">
+                    <a href="travel.html">🏝️ <span>Travel</span></a>
+                    <a href="hotels.html">🏨 <span>Hotels</span></a>
+                    <a href="restaurants.html">🍽️ <span>Restaurant</span></a>
+                    <a href="cafes.html">☕ <span>Café</span></a>
+                </div>
+            </div>
+
+            <a href="video.html" class="side-link">
+                🎬 <span>Video</span>
+            </a>
+
+            <a href="contact.html" class="side-link">
+                📞 <span>Contact</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>FOLLOW OUR JOURNEY</p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Pr.Srirachacity/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook เทศบาลเมืองศรีราชา">ⓕ</a>
+
+                <a href="https://www.youtube.com/@srirachacity784"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="YouTube เทศบาลเมืองศรีราชา">▶</a>
+
+                <a href="https://www.srirachacity.go.th/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="เว็บไซต์เทศบาลเมืองศรีราชา">🌐</a>
+            </div>
+
+            <small>SRIRACHA MUNICIPALITY</small>
+        </div>
+    </aside>
+
+    <script>
+        const dropdownButtons = document.querySelectorAll(".side-btn");
+
+        dropdownButtons.forEach(function (button) {
+            const dropdown = button.closest(".side-dropdown");
+
+            button.addEventListener("click", function () {
+                const isOpening = !dropdown.classList.contains("open");
+
+                document.querySelectorAll(".side-dropdown").forEach(function (item) {
+                    item.classList.remove("open");
+
+                    const itemButton = item.querySelector(".side-btn");
+
+                    if (itemButton) {
+                        itemButton.setAttribute("aria-expanded", "false");
+                    }
+                });
+
+                if (isOpening) {
+                    dropdown.classList.add("open");
+                    button.setAttribute("aria-expanded", "true");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="แนะนำร้านอาหารในศรีราชา สัมผัสวัฒนธรรมอาหารทะเล อาหารไทย และร้านอาหารหลากหลายสไตล์">
+    <title>MA SRI - RACHA | Restaurants</title>
+
+    <!-- FONT KANIT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="restaurants.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <a href="index.html" class="sidebar-logo">
+            <img src="img/logo.png" alt="โลโก้ศรีราชา">
+            <h2>MA</h2>
+            <p>SRI - RACHA</p>
+            <span>RESTAURANTS GUIDE</span>
+        </a>
+
+        <nav class="sidebar-menu" aria-label="เมนูหลัก">
+            <a href="index.html" class="side-link">
+                🏠 <span>Home</span>
+            </a>
+
+            <div class="side-dropdown">
+                <button
+                    type="button"
+                    class="side-link side-btn"
+                    aria-expanded="false"
+                    aria-controls="story-submenu">
+
+                    📖 <span>Our Story</span>
+                    <span class="arrow">▾</span>
+                </button>
+
+                <div class="side-submenu" id="story-submenu">
+                    <a href="history.html">
+                        📜 <span>History</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="side-dropdown open">
+                <button
+                    type="button"
+                    class="side-link side-btn active"
+                    aria-expanded="true"
+                    aria-controls="destination-submenu">
+
+                    📍 <span>Destination</span>
+                    <span class="arrow">▾</span>
+                </button>
+
+                <div class="side-submenu" id="destination-submenu">
+                    <a href="travel.html">🏝️ <span>Travel</span></a>
+                    <a href="hotels.html">🏨 <span>Hotels</span></a>
+
+                    <a href="restaurants.html"
+                        class="active"
+                        aria-current="page">
+                        🍽️ <span>Restaurant</span>
+                    </a>
+
+                    <a href="cafes.html">☕ <span>Café</span></a>
+                </div>
+            </div>
+
+            <a href="video.html" class="side-link">🎬 <span>Video</span></a>
+            <a href="contact.html" class="side-link">📞 <span>Contact</span></a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>FOLLOW OUR JOURNEY</p>
+            <div class="social-icons">
+                <a
+                    href="https://www.facebook.com/Pr.Srirachacity/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook เทศบาลเมืองศรีราชา">
+                    ⓕ
+                </a>
+
+                <a
+                    href="https://www.youtube.com/@srirachacity784"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube เทศบาลเมืองศรีราชา">
+                    ▶
+                </a>
+
+                <a
+                    href="https://www.srirachacity.go.th/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="เว็บไซต์เทศบาลเมืองศรีราชา">
+                    🌐
+                </a>
+
+            </div>
+            <small>SRIRACHA MUNICIPALITY</small>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section class="restaurant-hero" id="top">
+            <img
+                class="hero-image"
+                src="img/restaurant.png"
+                alt="บรรยากาศอาหารและร้านอาหารในศรีราชา">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-subtitle">
+                    SRIRACHA RESTAURANTS
+                </p>
+                <h1>
+                    FOOD<br>
+                    <span>SRI - RACHA</span>
+                </h1>
+                <div class="hero-line"></div>
+                <p class="hero-description">
+                    สัมผัสบรรยากาศของเมืองชายทะเล
+                    และรสชาติที่สะท้อนเสน่ห์ของศรีราชา
+                    ในแบบที่แตกต่างกันไปในแต่ละร้าน
+                </p>
+                <a href="#restaurant-list" class="hero-btn">
+                    🍽️ SPECIAL DINNER <span>➣</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="restaurant-intro" id="food-culture">
+            <div class="intro-inner">
+                <p class="section-eyebrow">
+                    SRIRACHA FOOD CULTURE
+                </p>
+                <h2>วัฒนธรรมด้านอาหารศรีราชา</h2>
+                <div class="title-line"></div>
+                <p>
+                    อาหารไม่ได้เป็นเพียงสิ่งที่รับประทาน
+                    แต่ยังเป็นส่วนหนึ่งของวิถีชีวิต วัฒนธรรม
+                    และเรื่องราวของผู้คนในเมืองศรีราชา
+                </p>
+                <div class="intro-location">
+                    <h3>Sriracha, Chonburi</h3>
+                    <p>Local Food Culture</p>
+                </div>
+
+                <p>
+                    <strong>อาหาร</strong>
+                    ถือเป็นส่วนหนึ่งของวิถีชีวิตและวัฒนธรรม
+                    ของชุมชนศรีราชา ด้วยความเป็นเมืองชายทะเลที่มีความหลากหลาย
+                    ทางวัฒนธรรม ทำให้อาหารในพื้นที่มีเอกลักษณ์และมีตัวเลือกที่หลากหลาย
+                    ทั้งอาหารทะเลสด อาหารไทยพื้นถิ่น อาหารจีน และอาหารญี่ปุ่น
+                    ที่เข้ามามีบทบาทจากความสัมพันธ์ระหว่างศรีราชากับชุมชนชาวญี่ปุ่น
+                </p>
+
+                <p>
+                    วัตถุดิบจากทะเลเป็นหนึ่งในเสน่ห์สำคัญของอาหารศรีราชา
+                    ไม่ว่าจะเป็นปลา กุ้ง ปู และหมึก ซึ่งสามารถนำมาปรุงเป็นอาหาร
+                    ได้หลากหลายเมนู ขณะเดียวกันอาหารในชุมชนยังสะท้อนภูมิปัญญา
+                    การปรุงอาหารและการเลือกใช้วัตถุดิบที่หาได้ในท้องถิ่น
+                    ทำให้เกิดร้านอาหารและเมนูที่มีรสชาติเป็นเอกลักษณ์
+                </p>
+
+                <blockquote class="intro-motto">
+
+                    <span>SRIRACHA FOOD CULTURE</span>
+
+                    <p>
+                        “อาหารของศรีราชาไม่ได้สะท้อนเพียงรสชาติ
+                        แต่ยังสะท้อนวิถีชีวิตและความหลากหลายของผู้คน
+                        ที่อยู่ร่วมกันในเมืองชายทะเลแห่งนี้”
+                    </p>
+
+                </blockquote>
+
+                <h3 class="intro-subheading">
+                    ความหลากหลายบนโต๊ะอาหาร
+                </h3>
+
+                <p>
+                    นอกจากนี้ ศรีราชายังเป็นพื้นที่ที่มีความหลากหลาย
+                    ทางสังคมและวัฒนธรรม จึงพบร้านอาหารหลากหลายรูปแบบ
+                    ตั้งแต่ร้านอาหารท้องถิ่น ร้านอาหารทะเล ไปจนถึงร้านอาหารญี่ปุ่น
+                    และอาหารนานาชาติ ความหลากหลายเหล่านี้ไม่ได้เป็นเพียงทางเลือก
+                    ในการรับประทานอาหาร แต่ยังสะท้อนให้เห็นถึงการอยู่ร่วมกัน
+                    และการแลกเปลี่ยนวัฒนธรรมของผู้คนในเมือง
+                </p>
+
+                <h3 class="intro-subheading">
+                    อาหารกับประสบการณ์การท่องเที่ยว
+                </h3>
+
+                <p>
+                    การเดินทางมาศรีราชาจึงไม่ได้มีเพียงการเที่ยวชมสถานที่
+                    หรือสัมผัสบรรยากาศริมทะเลเท่านั้น แต่ยังสามารถเรียนรู้เรื่องราว
+                    ของเมืองผ่านอาหาร ตั้งแต่การเลือกวัตถุดิบ การปรุงอาหาร
+                    ไปจนถึงบรรยากาศของร้านอาหารแต่ละแห่ง
+                    ซึ่งล้วนเป็นส่วนหนึ่งของประสบการณ์การท่องเที่ยวที่น่าจดจำ
+                </p>
+
+            </div>
+
+
+            <!-- FOOD CULTURE HIGHLIGHTS -->
+            <div class="features-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">🐟</div>
+                    <h3>อาหารทะเล</h3>
+                    <p>วัตถุดิบสดจากเมืองชายทะเล</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🍜</div>
+                    <h3>อาหารหลากหลาย</h3>
+                    <p>ไทย จีน ญี่ปุ่น และนานาชาติ</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🏘️</div>
+                    <h3>วิถีชุมชน</h3>
+                    <p>อาหารสะท้อนเรื่องราวของผู้คน</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESTAURANT LIST -->
+        <section class="restaurant-list" id="restaurant-list">
+
+            <div class="section-heading">
+
+                <p class="section-eyebrow">
+                    TASTE THE COASTAL CHARM
+                </p>
+
+                <h2>6 ร้านอาหารยอดนิยมในศรีราชา</h2>
+
+                <div class="title-line"></div>
+
+                <p class="section-description">
+                    เลือกร้านที่ใช่
+                    แล้วออกไปสัมผัสรสชาติและบรรยากาศ
+                    ของเมืองชายทะเลแห่งนี้
+                </p>
+
+            </div>
+
+
+            <!-- RESTAURANT GRID -->
+            <div class="restaurant-grid">
+
+
+                <!-- RESTAURANT 01 -->
+                <article class="restaurant-card">
+
+                    <div class="restaurant-card-image">
+
+                        <img
+                            src="img/มุมอร่อย.png"
+                            alt="ร้านมุมอร่อย ศรีราชา"
+                            loading="lazy">
+
+                        <span class="restaurant-number">01</span>
+                        <span class="restaurant-tag">⭐ POPULAR</span>
+
+                    </div>
+
+                    <div class="restaurant-card-content">
+
+                        <p class="restaurant-category">
+                            🐟 POPULAR SEAFOOD
+                        </p>
+
+                        <h3>Mum Aroi Sriracha</h3>
+
+                        <p class="restaurant-rating">
+                            ⭐⭐⭐⭐⭐ <strong>4.7/5</strong>
+                        </p>
+
+                        <p class="restaurant-description">
+                            ร้านอาหารทะเลบรรยากาศดีริมทะเลศรีราชา
+                            เหมาะสำหรับครอบครัวและกลุ่มเพื่อน
+                            พร้อมเมนูซีฟู้ดหลากหลาย และวิวพระอาทิตย์ตกที่สวยงาม
+                        </p>
+
+                        <div class="restaurant-details">
+
+                            <p>
+                                <strong>📍 ทำเล</strong>
+                                <span>ศรีราชา จังหวัดชลบุรี</span>
+                            </p>
+
+                            <p>
+                                <strong>🍽️ ประเภท</strong>
+                                <span>อาหารทะเลและอาหารไทย</span>
+                            </p>
+
+                            <p>
+                                <strong>🕐 เวลา</strong>
+                                <span>10:30–22:30 น.</span>
+                            </p>
+
+                            <p>
+                                <strong>📅 เปิดบริการ</strong>
+                                <span>เปิดทุกวัน</span>
+                            </p>
+
+                        </div>
+
+                        <div class="restaurant-dishes">
+
+                            <h4>👨‍🍳 เมนูที่ไม่ควรพลาด</h4>
+
+                            <div class="dish-list">
+                                <span>🐟 ปลากะพงทอดน้ำปลา</span>
+                                <span>🦪 หอยเชลล์เผา</span>
+                                <span>🦐 กุ้งเผา</span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="restaurant-map"
+                            href="https://www.google.com/maps/search/?api=1&amp;query=%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%AD%E0%B8%A3%E0%B9%88%E0%B8%AD%E0%B8%A2+%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            ดูแผนที่ร้าน 🔍
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RESTAURANT 02 -->
+                <article class="restaurant-card">
+
+                    <div class="restaurant-card-image">
+
+                        <img
+                            src="img/ริมเล.png"
+                            alt="ร้าน Rimhaad Seafood"
+                            loading="lazy">
+
+                        <span class="restaurant-number">02</span>
+                        <span class="restaurant-tag">🌊 SEAFOOD</span>
+
+                    </div>
+
+                    <div class="restaurant-card-content">
+
+                        <p class="restaurant-category">
+                            🐚 SEAFOOD RESTAURANT
+                        </p>
+
+                        <h3>Rimhaad Seafood</h3>
+
+                        <p class="restaurant-rating">
+                            ⭐⭐⭐⭐⭐ <strong>4.7/5</strong>
+                        </p>
+
+                        <p class="restaurant-description">
+                            ร้านอาหารทะเลที่เน้นวัตถุดิบสดใหม่
+                            พร้อมเสิร์ฟอาหารไทยรสชาติจัดจ้าน
+                            เหมาะสำหรับคนรักซีฟู้ดและการรับประทานอาหารริมทะเล
+                        </p>
+
+                        <div class="restaurant-details">
+
+                            <p>
+                                <strong>📍 ทำเล</strong>
+                                <span>ศรีราชา จังหวัดชลบุรี</span>
+                            </p>
+
+                            <p>
+                                <strong>🍽️ ประเภท</strong>
+                                <span>อาหารทะเลและอาหารไทย</span>
+                            </p>
+
+                            <p>
+                                <strong>🕐 เวลา</strong>
+                                <span>10:00–21:00 น.</span>
+                            </p>
+
+                            <p>
+                                <strong>📅 เปิดบริการ</strong>
+                                <span>เปิดทุกวัน</span>
+                            </p>
+
+                        </div>
+
+                        <div class="restaurant-dishes">
+
+                            <h4>👨‍🍳 เมนูที่ไม่ควรพลาด</h4>
+
+                            <div class="dish-list">
+                                <span>🦀 ปูผัดผงกะหรี่</span>
+                                <span>🐙 หมึกผัดน้ำดำ</span>
+                                <span>🦐 กุ้งเผา</span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="restaurant-map"
+                            href="https://maps.app.goo.gl/aRqKnTDFYWW48qtA9"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            ดูแผนที่ร้าน 🔍
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RESTAURANT 03 -->
+                <article class="restaurant-card">
+
+                    <div class="restaurant-card-image">
+
+                        <img
+                            src="img/ripper.png"
+                            alt="ร้าน Ripple Sea"
+                            loading="lazy">
+
+                        <span class="restaurant-number">03</span>
+                        <span class="restaurant-tag">🌅 SEA VIEW</span>
+
+                    </div>
+
+                    <div class="restaurant-card-content">
+
+                        <p class="restaurant-category">
+                            🌅 SEA VIEW RESTAURANT
+                        </p>
+
+                        <h3>Ripple Sea</h3>
+
+                        <p class="restaurant-rating">
+                            ⭐⭐⭐⭐⭐ <strong>4.5/5</strong>
+                        </p>
+
+                        <p class="restaurant-description">
+                            ร้านอาหารริมทะเลที่เหมาะสำหรับนั่งรับลม ชมวิว
+                            และรับประทานอาหารท่ามกลางบรรยากาศผ่อนคลาย
+                            เหมาะสำหรับการพักผ่อนและใช้เวลาร่วมกัน
+                        </p>
+
+                        <div class="restaurant-details">
+
+                            <p>
+                                <strong>📍 ทำเล</strong>
+                                <span>ศรีราชา จังหวัดชลบุรี</span>
+                            </p>
+
+                            <p>
+                                <strong>🍽️ ประเภท</strong>
+                                <span>อาหารทะเล</span>
+                            </p>
+
+                            <p>
+                                <strong>🕐 เวลา</strong>
+                                <span>
+                                    อาทิตย์–พฤหัสบดี 11:00–22:00 น.<br>
+                                    ศุกร์–เสาร์ 11:00–00:00 น.
+                                </span>
+                            </p>
+
+                            <p>
+                                <strong>📅 เปิดบริการ</strong>
+                                <span>เปิดทุกวัน</span>
+                            </p>
+
+                        </div>
+
+                        <div class="restaurant-dishes">
+
+                            <h4>👨‍🍳 เมนูที่ไม่ควรพลาด</h4>
+
+                            <div class="dish-list">
+                                <span>🦐 กุ้งซอสมะขาม</span>
+                                <span>🥗 ทะเลพิโรธ</span>
+                                <span>🐟 ปลากะพงเมี่ยง</span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="restaurant-map"
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Ripple+Sea+%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            ดูแผนที่ร้าน 🔍
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RESTAURANT 04 -->
+                <article class="restaurant-card">
+
+                    <div class="restaurant-card-image">
+
+                        <img
+                            src="img/ป๊อบ.png"
+                            alt="ร้าน Pop View Sriracha"
+                            loading="lazy">
+
+                        <span class="restaurant-number">04</span>
+                        <span class="restaurant-tag">🌿 CHILL</span>
+
+                    </div>
+
+                    <div class="restaurant-card-content">
+
+                        <p class="restaurant-category">
+                            🌿 CHILL RESTAURANT
+                        </p>
+
+                        <h3>Pop View Sriracha</h3>
+
+                        <p class="restaurant-rating">
+                            ⭐⭐⭐⭐⭐ <strong>4.5/5</strong>
+                        </p>
+
+                        <p class="restaurant-description">
+                            ร้านอาหารบรรยากาศสบาย เหมาะสำหรับนั่งพักผ่อน
+                            พบปะเพื่อน และใช้เวลาชิลๆ
+                            พร้อมเมนูอาหารและเครื่องดื่มหลากหลาย
+                        </p>
+
+                        <div class="restaurant-details">
+
+                            <p>
+                                <strong>📍 ทำเล</strong>
+                                <span>ศรีราชา จังหวัดชลบุรี</span>
+                            </p>
+
+                            <p>
+                                <strong>🍽️ ประเภท</strong>
+                                <span>อาหารไทยและอาหารตะวันตก</span>
+                            </p>
+
+                            <p>
+                                <strong>🕐 เวลา</strong>
+                                <span>
+                                    จันทร์–ศุกร์ 14:00–00:00 น.<br>
+                                    เสาร์–อาทิตย์ 11:00–00:00 น.
+                                </span>
+                            </p>
+
+                            <p>
+                                <strong>📅 เปิดบริการ</strong>
+                                <span>เปิดทุกวัน</span>
+                            </p>
+
+                        </div>
+
+                        <div class="restaurant-dishes">
+
+                            <h4>👨‍🍳 เมนูที่ไม่ควรพลาด</h4>
+
+                            <div class="dish-list">
+                                <span>🐙 หมึกแดดเดียว</span>
+                                <span>🦐 ผัดฉ่าทะเล</span>
+                                <span>🥩 สเต๊ก</span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="restaurant-map"
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Pop+View+Sriracha+%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            ดูแผนที่ร้าน 🔍
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RESTAURANT 05 -->
+                <article class="restaurant-card">
+
+                    <div class="restaurant-card-image">
+
+                        <img
+                            src="img/เรือนน้ำ.png"
+                            alt="ร้าน Ruen Nam Seafood"
+                            loading="lazy">
+
+                        <span class="restaurant-number">05</span>
+                        <span class="restaurant-tag">🌊 SEAFOOD</span>
+
+                    </div>
+
+                    <div class="restaurant-card-content">
+
+                        <p class="restaurant-category">
+                            🌊 SEAFOOD RESTAURANT
+                        </p>
+
+                        <h3>Ruen Nam Seafood</h3>
+
+                        <p class="restaurant-rating">
+                            ⭐⭐⭐⭐⭐ <strong>4.3/5</strong>
+                        </p>
+
+                        <p class="restaurant-description">
+                            ร้านอาหารทะเลริมทะเลศรีราชา บรรยากาศดี
+                            มีเมนูซีฟู้ดหลากหลาย เหมาะสำหรับครอบครัวและกลุ่มเพื่อน
+                            พร้อมชมวิวทะเลใกล้เกาะลอย
+                        </p>
+
+                        <div class="restaurant-details">
+
+                            <p>
+                                <strong>📍 ทำเล</strong>
+                                <span>ศรีราชา จังหวัดชลบุรี</span>
+                            </p>
+
+                            <p>
+                                <strong>🍽️ ประเภท</strong>
+                                <span>อาหารทะเล</span>
+                            </p>
+
+                            <p>
+                                <strong>🕐 เวลา</strong>
+                                <span>10:00–22:00 น.</span>
+                            </p>
+
+                            <p>
+                                <strong>📅 เปิดบริการ</strong>
+                                <span>เปิดทุกวัน</span>
+                            </p>
+
+                        </div>
+
+                        <div class="restaurant-dishes">
+
+                            <h4>👨‍🍳 เมนูที่ไม่ควรพลาด</h4>
+
+                            <div class="dish-list">
+                                <span>🦀 ปูม้านึ่ง</span>
+                                <span>🦐 กุ้งอบวุ้นเส้น</span>
+                                <span>🦑 หมึกผัดไข่เค็ม</span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="restaurant-map"
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Ruen+Nam+Seafood+%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            ดูแผนที่ร้าน 🔍
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RESTAURANT 06 -->
+                <article class="restaurant-card">
+
+                    <div class="restaurant-card-image">
+
+                        <img
+                            src="img/เลชล.png"
+                            alt="ร้าน Talaychon Sriracha Seafood"
+                            loading="lazy">
+
+                        <span class="restaurant-number">06</span>
+                        <span class="restaurant-tag">🦐 LOCAL</span>
+
+                    </div>
+
+                    <div class="restaurant-card-content">
+
+                        <p class="restaurant-category">
+                            🦐 LOCAL FAVORITE
+                        </p>
+
+                        <h3>Talaychon Sriracha Seafood</h3>
+
+                        <p class="restaurant-rating">
+                            ⭐⭐⭐⭐⭐ <strong>4.3/5</strong>
+                        </p>
+
+                        <p class="restaurant-description">
+                            ร้านอาหารทะเลสไตล์ท้องถิ่น เน้นวัตถุดิบสดใหม่
+                            พร้อมรสชาติอาหารไทยที่จัดจ้าน
+                            เหมาะสำหรับคนรักซีฟู้ด
+                        </p>
+
+                        <div class="restaurant-details">
+
+                            <p>
+                                <strong>📍 ทำเล</strong>
+                                <span>บางพระ ศรีราชา จังหวัดชลบุรี</span>
+                            </p>
+
+                            <p>
+                                <strong>🍽️ ประเภท</strong>
+                                <span>อาหารไทยและอาหารทะเล</span>
+                            </p>
+
+                            <p>
+                                <strong>🕐 เวลา</strong>
+                                <span>11:00–22:00 น.</span>
+                            </p>
+
+                            <p>
+                                <strong>📅 เปิดบริการ</strong>
+                                <span>เปิดทุกวัน</span>
+                            </p>
+
+                        </div>
+
+                        <div class="restaurant-dishes">
+
+                            <h4>👨‍🍳 เมนูที่ไม่ควรพลาด</h4>
+
+                            <div class="dish-list">
+                                <span>🐟 ปลากะพงนึ่งมะนาว</span>
+                                <span>🦪 หอยนางรม</span>
+                                <span>🦐 กุ้งทอดกระเทียม</span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="restaurant-map"
+                            href="https://maps.app.goo.gl/UV4CxAdtVUMP2JEa9"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            ดูแผนที่ร้าน 🔍
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+            <!-- END RESTAURANT GRID -->
+
+        </section>
+        <!-- END RESTAURANT LIST -->
+
+
+        <!-- FOOTER -->
+        <footer class="history-footer">
+
+            <div class="footer-logo">
+                MA SRI - RACHA
+            </div>
+
+            <p class="footer-tagline">
+                History • Travel • Hotel • Restaurant • Café
+            </p>
+
+            <div class="footer-divider"></div>
+
+            <p class="copyright">
+                © 2026 เว็บไซต์แนะนำสถานที่ท่องเที่ยวเมืองศรีราชา
+            </p>
+
+        </footer>
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // SIDEBAR DROPDOWN
+        document.querySelectorAll(".side-btn").forEach(function (button) {
+
+            button.addEventListener("click", function () {
+
+                const dropdown = button.closest(".side-dropdown");
+
+                if (!dropdown) return;
+
+                const isOpening = !dropdown.classList.contains("open");
+
+                document.querySelectorAll(".side-dropdown").forEach(function (item) {
+
+                    item.classList.remove("open");
+
+                    const itemButton = item.querySelector(".side-btn");
+
+                    if (itemButton) {
+                        itemButton.setAttribute("aria-expanded", "false");
+                    }
+
+                });
+
+                if (isOpening) {
+
+                    dropdown.classList.add("open");
+
+                    button.setAttribute("aria-expanded", "true");
+
+                }
+
+            });
+
+        });
+
+
+        // BACK TO TOP
+        const backTop = document.getElementById("backTop");
+
+        if (backTop) {
+
+            function toggleBackTop() {
+
+                backTop.classList.toggle(
+                    "visible",
+                    window.scrollY > 400
+                );
+
+            }
+
+            window.addEventListener(
+                "scroll",
+                toggleBackTop,
+                { passive: true }
+            );
+
+            toggleBackTop();
+
+            backTop.addEventListener("click", function () {
+
+                const reduceMotion = window.matchMedia(
+                    "(prefers-reduced-motion: reduce)"
+                ).matches;
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: reduceMotion ? "auto" : "smooth"
+                });
+
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>

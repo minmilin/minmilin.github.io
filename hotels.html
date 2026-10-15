@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="แนะนำโรงแรม">
+    <title>MA SRI - RACHA | Hotels</title>
+
+    <!-- GOOGLE FONT: KANIT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="hotels.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <a href="index.html" class="sidebar-logo">
+            <img src="img/logo.png" alt="โลโก้ศรีราชา">
+            <h2>MA</h2>
+            <p>SRI - RACHA</p>
+            <span>HOTELS GUIDE</span>
+        </a>
+
+        <nav class="sidebar-menu" aria-label="เมนูหลัก">
+            <a href="index.html" class="side-link">
+                🏠 <span>Home</span>
+            </a>
+
+            <div class="side-dropdown">
+                <button
+                    type="button"
+                    class="side-link side-btn"
+                    aria-expanded="false"
+                    aria-controls="story-submenu">
+                    📖 <span>Our Story</span>
+                    <span class="arrow" aria-hidden="true">▾</span>
+                </button>
+
+                <div class="side-submenu" id="story-submenu">
+                    <a href="history.html">
+                        📜 <span>History</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="side-dropdown open">
+                <button
+                    type="button"
+                    class="side-link side-btn active"
+                    aria-expanded="true"
+                    aria-controls="destination-submenu">
+                    📍 <span>Destination</span>
+                    <span class="arrow" aria-hidden="true">▾</span>
+                </button>
+
+                <div class="side-submenu" id="destination-submenu">
+                    <a href="travel.html">🏝️ <span>Travel</span></a>
+                    <a href="hotels.html" class="active" aria-current="page">🏨 <span>Hotels</span></a>
+                    <a href="restaurants.html">🍽️ <span>Restaurant</span></a>
+                    <a href="cafes.html">☕ <span>Café</span></a>
+                </div>
+            </div>
+
+            <a href="video.html" class="side-link">🎬 <span>Video</span></a>
+            <a href="contact.html" class="side-link">📞 <span>Contact</span></a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>FOLLOW OUR JOURNEY</p>
+            <div class="social-icons">
+                <a
+                    href="https://www.facebook.com/Pr.Srirachacity/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook เทศบาลเมืองศรีราชา">
+                    ⓕ
+                </a>
+
+                <a
+                    href="https://www.youtube.com/@srirachacity784"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube เทศบาลเมืองศรีราชา">
+                    ▶
+                </a>
+
+                <a
+                    href="https://www.srirachacity.go.th/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="เว็บไซต์เทศบาลเมืองศรีราชา">
+                    🌐
+                </a>
+            </div>
+            <small>SRIRACHA MUNICIPALITY</small>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section class="hotel-hero" id="hotel-top">
+            <img class="hero-image" src="img/Hotels.png"
+                alt="ที่พักและบรรยากาศริมทะเลศรีราชา">
+
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-subtitle">
+                    STAY RELAX IN SRIRACHA
+                </p>
+                <h1>
+                    HOTELS<br>
+                    <span>
+                        SRI - RACHA
+                    </span>
+                </h1>
+
+                <div class="hero-line"></div>
+
+                <h2>Hotels Accommodation</h2>
+
+                <p class="hero-description">
+                    โรงแรม ที่พักริมทะเล และที่พักบรรยากาศดี
+                    สำหรับการพักผ่อนในศรีราชา ไม่ว่าจะเป็นการชมวิวทะเล
+                    ใช้เวลากับครอบครัว หรือสัมผัสธรรมชาติอย่างใกล้ชิด
+                </p>
+
+                <a href="#hotel-intro" class="hero-btn">
+                    🛎️ Take a vacation <span>➣</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="hotel-intro" id="hotel-intro">
+            <div class="intro-inner">
+                <p class="section-eyebrow">
+                    SRIRACHA: YOUR ULTIMATE RELAXATION DESTINATION
+                </p>
+
+                <div class="title-line"></div>
+
+                <p>
+                    ศรีราชาเป็นจุดหมายปลายทางที่ผสมผสานการพักผ่อน
+                    และไลฟ์สไตล์ได้อย่างลงตัว ตั้งแต่โรงแรมหรูริมทะเล
+                    ที่มองเห็นอ่าวไทย ไปจนถึงที่พักบรรยากาศสงบ
+                    สำหรับคนที่ต้องการหลีกหนีความวุ่นวายของเมือง
+                </p>
+
+                <p>
+                    คุณสามารถใช้เวลาเดินเล่นริมทะเล จิบกาแฟในคาเฟ่
+                    สัมผัสธรรมชาติ หรือออกเดินทางไปยังสถานที่ท่องเที่ยว
+                    รอบศรีราชาได้อย่างสะดวก
+                </p>
+
+                <p>
+                    ไม่ว่าจะเดินทางเป็นคู่ มากับครอบครัว
+                    หรือวางแผนท่องเที่ยวกับกลุ่มเพื่อน
+                    ศรีราชามีที่พักหลากหลายรูปแบบให้เลือก
+                    ตามงบประมาณและสไตล์การเดินทางของคุณ
+                </p>
+
+                <a href="#hotel-top-list" class="hotel-link">
+                    Discover Hotels →
+                </a>
+            </div>
+        </section>
+
+        <!-- TOP 6 HOTELS -->
+        <section class="hotel-top-list" id="hotel-top-list">
+            <div class="section-heading">
+                <p class="section-eyebrow">
+                    TOP 6 HOTELS IN SRIRACHA
+                </p>
+                <div class="title-line"></div>
+                <p class="section-description">
+                    เลือกที่พักที่ใช่ สำหรับวันพักผ่อนในแบบของคุณ
+                </p>
+
+            </div>
+
+            <!-- HOTEL 1 -->
+            <div class="hotel-grid">
+                <article class="hotel-card">
+                    <a href="#hotel-1" class="hotel-card-image">
+                        <img src="img/s.jpg" alt="S. Sriracha Hotel" loading="lazy">
+                        <span class="hotel-category">
+                            OCEANFRONT HOTEL
+                        </span>
+                    </a>
+
+                    <div class="hotel-card-content">
+                        <p class="hotel-number">01 / SEASIDE LUXURY</p>
+                        <h3>S. Sriracha Hotel</h3>
+                        <p class="hotel-rating">⭐⭐⭐⭐⭐ 4.6/5</p>
+
+                        <p>
+                            โรงแรมริมทะเลสำหรับผู้ที่ต้องการพักผ่อน
+                            พร้อมชมวิวทะเลและสิ่งอำนวยความสะดวกครบครัน
+                        </p>
+
+                        <p class="hotel-price">
+                            ฿3,200–4,500 <span>/ คืน</span>
+                        </p>
+                            <br>
+                        <a href="#hotel-1" class="hotel-link">
+                            ดูรายละเอียด →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- HOTEL 2 -->
+                <article class="hotel-card">
+                    <a href="#hotel-2" class="hotel-card-image">
+                        <img src="img/oakwood.jpg" alt="Oakwood Hotel and Residence Sri Racha" loading="lazy">
+                        <span class="hotel-category">
+                            HOTEL RESIDENCE
+                        </span>
+                    </a>
+
+                    <div class="hotel-card-content">
+                        <p class="hotel-number">02 / CITY SEA VIEW</p>
+                        <h3>Oakwood Hotel Residence Sri Racha</h3>
+                        <p class="hotel-rating">⭐⭐⭐⭐⭐ 4.5/5</p>
+                        <p>
+                            ที่พักใจกลางเมือง พร้อมวิวอ่าวไทยและเกาะลอย
+                            เหมาะสำหรับการพักผ่อนและเดินทางทำงาน
+                        </p>
+
+                        <p class="hotel-price">
+                            ฿2,100–3,500 <span>/ คืน</span>
+                        </p>
+                            <br>
+                        <a href="#hotel-2" class="hotel-link">
+                            ดูรายละเอียด →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- HOTEL 3 -->
+                <article class="hotel-card">
+                    <a href="#hotel-3" class="hotel-card-image">
+                        <img src="img/บ้านออ.jpg" alt="Aor Ang Lodge Bangpra" loading="lazy">
+                        <span class="hotel-category">
+                            LODGE CAMPING
+                        </span>
+                    </a>
+
+                    <div class="hotel-card-content">
+                        <p class="hotel-number">03 / NATURE CAMPING</p>
+                        <h3>Aor Ang Lodge Bangpra</h3>
+                        <p class="hotel-rating">⭐⭐⭐⭐⭐ 4.5/5</p>
+
+                        <p>
+                            ที่พักและลานกางเต็นท์บรรยากาศธรรมชาติ
+                            เหมาะกับผู้ที่ชอบความเรียบง่ายและกิจกรรมกลางแจ้ง
+                        </p>
+
+                        <p class="hotel-price">
+                            ฿990–1,500 <span>/ คืน</span>
+                        </p>
+                            <br>
+                        <a href="#hotel-3" class="hotel-link">
+                            ดูรายละเอียด →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- HOTEL 4 -->
+                <article class="hotel-card">
+                    <a href="#hotel-4" class="hotel-card-image">
+                        <img
+                            src="img/Baaa.jpg"
+                            alt="Balcony Seaside Sriracha"
+                            loading="lazy">
+                        <span class="hotel-category">
+                            SEASIDE RESIDENCE
+                        </span>
+                    </a>
+
+                    <div class="hotel-card-content">
+                        <p class="hotel-number">04 / FAMILY FRIENDLY</p>
+                        <h3>Balcony Seaside Sriracha</h3>
+                        <p class="hotel-rating">⭐⭐⭐⭐⭐ 4.5/5</p>
+                        <p>
+                            ที่พักสไตล์เซอร์วิสอพาร์ตเมนต์
+                            พร้อมกิจกรรมและพื้นที่พักผ่อนสำหรับครอบครัว
+                        </p>
+                        <p class="hotel-price">
+                            ฿3,000–4,500 <span>/ คืน</span>
+                        </p>
+                            <br>
+                        <a href="#hotel-4" class="hotel-link">
+                            ดูรายละเอียด →
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- HOTEL 5 -->
+                <article class="hotel-card">
+
+                    <a href="#hotel-5" class="hotel-card-image">
+                        <img
+                            src="img/Centara.jpg"
+                            alt="Centara Sonrisa Residences and Suites Sriracha"
+                            loading="lazy">
+
+                        <span class="hotel-category">
+                            BEACHFRONT RESIDENCE
+                        </span>
+                    </a>
+
+                    <div class="hotel-card-content">
+                        <p class="hotel-number">05 / RELAX BY THE SEA</p>
+                        <h3>Centara Sonrisa Residences Suites Sriracha</h3>
+                        <p class="hotel-rating">⭐⭐⭐⭐⭐ 4.4/5</p>
+                        <p>
+                            ที่พักริมทะเลที่เหมาะกับครอบครัว
+                            พร้อมสระว่ายน้ำและพื้นที่สำหรับเด็ก
+                        </p>
+    
+                        <p class="hotel-price">
+                            ฿1,000–1,500 <span>/ คืน</span>
+                        </p>
+                            <br>
+                        <a href="#hotel-5" class="hotel-link">
+                            ดูรายละเอียด →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- HOTEL 6 -->
+                <article class="hotel-card">
+                    <a href="#hotel-6" class="hotel-card-image">
+                        <img
+                            src="img/บายอน.webp"
+                            alt="Bayon Thasai ที่พักและลานกางเต็นท์"
+                            loading="lazy">
+                        <span class="hotel-category">
+                            CAMPING HOMESTAY
+                        </span>
+                    </a>
+
+                    <div class="hotel-card-content">
+                        <p class="hotel-number">06 / SLOW LIFE</p>
+                        <h3>Bayon Thasai</h3>
+                        <p class="hotel-rating">⭐⭐⭐⭐⭐ 4.3/5</p>
+                        <p>
+                            ที่พักและลานกางเต็นท์ใกล้ธรรมชาติ
+                            เหมาะสำหรับการพักผ่อนแบบเรียบง่าย
+                        </p>
+
+                        <p class="hotel-price">
+                            ฿150 <span>/ คน / คืน (กางเต็นท์)</span>
+                        </p>
+                            <br>
+                        <a href="#hotel-6" class="hotel-link">
+                            ดูรายละเอียด →
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <p class="hotel-note">
+                * คะแนนและราคาเป็นข้อมูลประกอบการวางแผนเดินทาง
+                ราคาอาจเปลี่ยนแปลงตามวันเข้าพัก ประเภทห้องพัก
+                และเงื่อนไขของผู้ให้บริการ ควรตรวจสอบก่อนจอง
+            </p>
+
+        </section>
+
+        <!-- HOTEL DETAILS -->
+        <section class="hotel-details">
+            <div class="section-heading">
+                <p class="section-eyebrow">
+                    YOUR STAY, YOUR EXPERIENCE
+                </p>
+                <h2>รายละเอียดที่พัก</h2>
+                <div class="title-line"></div>
+                <p class="section-description">
+                    ทำความรู้จักที่พักแต่ละแห่งก่อนออกเดินทาง
+                </p>
+            </div>
+
+            <!-- DETAIL 1 -->
+            <article class="hotel-detail" id="hotel-1">
+                <div class="detail-image">
+                    <img
+                        src="img/ss.webp"
+                        alt="บรรยากาศ S. Sriracha Hotel"
+                        loading="lazy">
+                </div>
+
+                <div class="detail-content">
+                    <p class="hotel-number">01 / SEASIDE LUXURY</p>
+                    <p class="hotel-category-text">OCEANFRONT HOTEL</p>
+                    <h3>S. Sriracha Hotel</h3>
+                    <p class="hotel-rating">⭐⭐⭐⭐⭐ 4.6/5</p>
+                    <p>
+                        ที่พักสำหรับผู้ที่ต้องการสัมผัสบรรยากาศริมทะเล
+                        เหมาะกับการพักผ่อนในวันหยุดและการใช้เวลาสบายๆ
+                        พร้อมชมวิวทะเล
+                    </p>
+                    <h4>จุดเด่นและสิ่งอำนวยความสะดวก</h4>
+                    <ul>
+                        <li>🏖️ วิวทะเลและบรรยากาศริมชายฝั่ง</li>
+                        <li>🏊 สระว่ายน้ำ</li>
+                        <li>🏋️ ห้องออกกำลังกาย</li>
+                        <li>🍽️ ห้องอาหาร</li>
+                        <li>📶 บริการ Wi-Fi</li>
+                    </ul>
+                    <p class="detail-price">
+                        💳 ราคาโดยประมาณ ฿3,200–4,500 / คืน
+                    </p>
+                    <a
+                        href="https://www.google.com/search?q=S.+Sriracha+Hotel+official"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="detail-btn">
+                        🔍 ตรวจสอบที่พัก
+                    </a>
+                </div>
+            </article>
+
+            <!-- DETAIL 2 -->
+            <article class="hotel-detail reverse" id="hotel-2">
+                <div class="detail-image">
+                    <img
+                        src="img/โอ็ควูด.avif"
+                        alt="บรรยากาศ Oakwood Hotel and Residence Sri Racha"
+                        loading="lazy">
+                </div>
+
+                <div class="detail-content">
+                    <p class="hotel-number">02 / CITY SEA VIEW</p>
+                    <p class="hotel-category-text">HOTEL RESIDENCE</p>
+                    <h3>Oakwood Hotel Residence Sri Racha</h3>
+                    <p class="hotel-rating">⭐⭐⭐⭐⭐ 4.5/5</p>
+                    <p>
+                        โรงแรมและที่พักใจกลางศรีราชา เหมาะกับทั้งนักท่องเที่ยว
+                        และผู้เดินทางมาทำงาน สามารถเลือกพักผ่อนพร้อมชมวิวอ่าวไทย
+                        และเกาะลอยได้ตามประเภทห้องพัก
+                    </p>
+                    <h4>จุดเด่นและสิ่งอำนวยความสะดวก</h4>
+                    <ul>
+                        <li>🏙️ ทำเลใจกลางเมืองศรีราชา</li>
+                        <li>🌅 วิวทะเลและเกาะลอยในห้องพักบางประเภท</li>
+                        <li>💦 สระว่ายน้ำ</li>
+                        <li>💪 ห้องออกกำลังกาย</li>
+                        <li>🥂 ห้องอาหารและ Wi-Fi</li>
+                    </ul>
+                    <p class="detail-price">
+                        💳 ราคาโดยประมาณ ฿2,100–3,500 / คืน
+                    </p>
+                    <a
+                        href="https://www.google.com/search?q=Oakwood+Hotel+Residence+Sri+Racha+official"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="detail-btn">
+                        🔍 ตรวจสอบที่พัก
+                    </a>
+                </div>
+            </article>
+
+            <!-- DETAIL 3 -->
+            <article class="hotel-detail" id="hotel-3">
+                <div class="detail-image">
+                    <img
+                        src="img/อ.อ่าง.webp" 
+                        alt="บรรยากาศ Aor Ang Lodge Bangpra"
+                        loading="lazy">
+                </div>
+
+                <div class="detail-content">
+                    <p class="hotel-number">03 / NATURE CAMPING</p>
+                    <p class="hotel-category-text">LODGE CAMPING</p>
+                    <h3>Aor Ang Lodge Bangpra</h3>
+                    <p class="hotel-rating">⭐⭐⭐⭐⭐ 4.5/5</p>
+                    <p>
+                        ที่พักแนวลอดจ์และแคมป์ปิง เหมาะสำหรับผู้ที่ชื่นชอบธรรมชาติ
+                        การใช้เวลานอกบ้าน และการพักผ่อนอย่างเรียบง่าย
+                        ในบรรยากาศใกล้อ่างเก็บน้ำบางพระ
+                    </p>
+                    <h4>จุดเด่นและสิ่งอำนวยความสะดวก</h4>
+                    <ul>
+                        <li>🌳 บรรยากาศธรรมชาติใกล้อ่างเก็บน้ำบางพระ</li>
+                        <li>⛺ พื้นที่กางเต็นท์และสนามหญ้า</li>
+                        <li>🍖 พื้นที่ทำกิจกรรมกลางแจ้งและปิ้งย่าง</li>
+                        <li>🛁 ห้องน้ำและน้ำอุ่นตามพื้นที่ให้บริการ</li>
+                        <li>🐶 รองรับสัตว์เลี้ยงตามเงื่อนไขของที่พัก</li>
+                    </ul>
+                    <p class="detail-price">
+                        💳 ราคาโดยประมาณ ฿990–1,500 / คืน
+                    </p>
+                    <a
+                        href="https://www.google.com/search?q=Aor+Ang+Lodge+Bangpra"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="detail-btn">
+                        🔍 ตรวจสอบที่พัก
+                    </a>
+                </div>
+            </article>
+
+            <!-- DETAIL 4 -->
+            <article class="hotel-detail reverse" id="hotel-4">
+                <div class="detail-image">
+                    <img
+                        src="img/ห้องbba.jpg"
+                        alt="บรรยากาศ Balcony Seaside Sriracha"
+                        loading="lazy">
+                </div>
+
+                <div class="detail-content">
+                    <p class="hotel-number">04 / FAMILY FRIENDLY</p>
+                    <p class="hotel-category-text">SEASIDE RESIDENCE</p>
+                    <h3>Balcony Seaside Sriracha</h3>
+                    <p class="hotel-rating">⭐⭐⭐⭐⭐ 4.5/5</p>
+                    <p>
+                        ที่พักรูปแบบเซอร์วิสอพาร์ตเมนต์ที่เหมาะกับครอบครัว
+                        และผู้ที่ต้องการใช้เวลาทำกิจกรรมร่วมกัน
+                        มีพื้นที่พักผ่อนและกิจกรรมสำหรับสมาชิกหลายช่วงวัย
+                    </p>
+                    <h4>จุดเด่นและสิ่งอำนวยความสะดวก</h4>
+                    <ul>
+                        <li>🌊 ทำเลริมทะเล</li>
+                        <li>🧸 Mini HarborLand สำหรับเด็ก</li>
+                        <li>♨️ พื้นที่อาบน้ำแร่สไตล์ญี่ปุ่น Ofuro</li>
+                        <li>⛳ ห้องออกกำลังกายและสนามกอล์ฟจำลอง</li>
+                        <li>🎨 พื้นที่กิจกรรมสำหรับครอบครัว</li>
+                    </ul>
+                    <p class="detail-price">
+                        💳 ราคาโดยประมาณ ฿3,000–4,500 / คืน
+                    </p>
+                    <a
+                        href="https://www.google.com/search?q=Balcony+Seaside+Sriracha+official"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="detail-btn">
+                        🔍 ตรวจสอบที่พัก
+                    </a>
+                </div>
+            </article>
+
+            <!-- DETAIL 5 -->
+            <article class="hotel-detail" id="hotel-5">
+                <div class="detail-image">
+                    <img
+                        src="img/Centara Sonrisa.jpg"
+                        alt="บรรยากาศ Centara Sonrisa Residences and Suites Sriracha"
+                        loading="lazy">
+                </div>
+                <div class="detail-content">
+                    <p class="hotel-number">05 / RELAX BY THE SEA</p>
+                    <p class="hotel-category-text">BEACHFRONT RESIDENCE</p>
+                    <h3>Centara Sonrisa Residences Suites Sriracha</h3>
+                    <p class="hotel-rating">⭐⭐⭐⭐⭐ 4.4/5</p>
+                    <p>
+                        ที่พักบรรยากาศริมทะเลที่เหมาะสำหรับการเดินทางเป็นครอบครัว
+                        มีพื้นที่พักผ่อนและกิจกรรมสำหรับเด็ก
+                        พร้อมตัวเลือกห้องพักที่ตอบโจทย์การเข้าพักหลายรูปแบบ
+                    </p>
+                    <h4>จุดเด่นและสิ่งอำนวยความสะดวก</h4>
+                    <ul>
+                        <li>🌊 บรรยากาศใกล้ทะเล</li>
+                        <li>🏊 สระว่ายน้ำ</li>
+                        <li>🎈 คิดส์คลับและกิจกรรมสำหรับเด็ก</li>
+                        <li>♨️ สปาและซาวน่าตามบริการที่เปิดให้บริการ</li>
+                        <li>🍳 ห้องพักบางประเภทมีพื้นที่ครัว</li>
+                    </ul>
+                    <p class="detail-price">
+                        💳 ราคาโดยประมาณ ฿1,000–1,500 / คืน
+                    </p>
+                    <a
+                        href="https://www.google.com/search?q=Centara+Sonrisa+Residences+Suites+Sriracha+official"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="detail-btn">
+                        🔍 ตรวจสอบที่พัก
+                    </a>
+                </div>
+            </article>
+
+            <!-- DETAIL 6 -->
+            <article class="hotel-detail reverse" id="hotel-6">
+                <div class="detail-image">
+                    <img
+                        src="img/ba.webp"
+                        alt="บรรยากาศ Bayon Thasai"
+                        loading="lazy">
+                </div>
+                <div class="detail-content">
+                    <p class="hotel-number">06 / SLOW LIFE</p>
+                    <p class="hotel-category-text">CAMPING HOMESTAY</p>
+                    <h3>Bayon Thasai</h3>
+                    <p class="hotel-rating">⭐⭐⭐⭐⭐ 4.3/5</p>
+                    <p>
+                        ที่พักแนวโฮมสเตย์และลานกางเต็นท์ สำหรับคนที่ต้องการ
+                        เปลี่ยนบรรยากาศมาพักผ่อนใกล้ธรรมชาติ
+                        ใช้เวลาร่วมกับเพื่อน หรือทำกิจกรรมกลางแจ้งแบบเรียบง่าย
+                    </p>
+                    <h4>จุดเด่นและสิ่งอำนวยความสะดวก</h4>
+                    <ul>
+                        <li>🏕️ พื้นที่กางเต็นท์ใกล้ลำธารและธรรมชาติ</li>
+                        <li>🏡 มีตัวเลือกที่พักแบบบ้านพัก</li>
+                        <li>🚿 ห้องน้ำส่วนกลาง</li>
+                        <li>🍽️ พื้นที่ล้างภาชนะ</li>
+                        <li>🐾 รองรับสัตว์เลี้ยงตามเงื่อนไขของที่พัก</li>
+                    </ul>
+                    <p class="detail-price">
+                        💳 กางเต็นท์ ฿150 / คน / คืน<br>
+                        💳 บ้านพัก ฿1,000–3,500 / หลัง
+                    </p>
+                    <a
+                        href="https://www.google.com/search?q=Bayon+Thasai+ที่พัก"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="detail-btn">
+                        🔍 ตรวจสอบที่พัก
+                    </a>
+                </div>
+            </article>
+
+            <p class="hotel-note">
+                หมายเหตุ: ราคา คะแนน และสิ่งอำนวยความสะดวกควรตรวจสอบ
+                กับผู้ให้บริการที่พักอีกครั้งก่อนการจอง
+            </p>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="hotel-cta">
+            <div class="cta-content">
+                <p class="section-eyebrow">
+                    YOUR NEXT JOURNEY STARTS HERE
+                </p>
+                <div class="title-line"></div>
+                <p>
+                    เลือกที่พักที่เหมาะกับคุณ แล้วออกไปสัมผัสทะเล
+                    ธรรมชาติ และประสบการณ์ใหม่ๆ ในศรีราชา
+                </p>
+
+        <div class="cta-buttons">
+
+                <a href="https://www.agoda.com/search?city=17188"
+                class="cta-btn primary"
+                target="_blank"
+                rel="noopener noreferrer">
+                    🏨 Agoda →
+                </a>
+
+                <a href="https://www.booking.com/searchresults.html?ss=Sriracha%2C%20Chonburi%2C%20Thailand"
+                class="cta-btn primary"
+                target="_blank"
+                rel="noopener noreferrer">
+                    🛏️ Booking.com →
+                </a>
+
+                <a href="https://www.traveloka.com/"
+                class="cta-btn primary"
+                target="_blank"
+                rel="noopener noreferrer">
+                    ✈️ Traveloka →
+                </a>
+
+                <a href="https://www.trip.com/hotels/"
+                class="cta-btn primary"
+                target="_blank"
+                rel="noopener noreferrer">
+                    🌍 Trip.com →
+                </a>
+
+                <a href="https://www.expedia.com/Hotel-Search"
+                class="cta-btn primary"
+                target="_blank"
+                rel="noopener noreferrer">
+                    🧳 Expedia →
+                </a>
+        </div>
+    </div>
+</section>
+
+        <!-- FOOTER -->
+        <footer class="hotel-footer">
+            <div class="footer-logo">
+                MA SRI - RACHA
+            </div>
+            <p class="footer-tagline">
+                Discover • Travel • Experience
+            </p>
+            <div class="footer-divider"></div>
+            <p class="copyright">
+                © 2026 Sriracha Travel Guide. All rights reserved.
+            </p>
+        </footer>
+    </main>
+
+    <!-- SIDEBAR DROPDOWN SCRIPT -->
+    <script>
+        const dropdownButtons = document.querySelectorAll(".side-btn");
+
+        dropdownButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                const currentDropdown = button.closest(".side-dropdown");
+                const isOpening = !currentDropdown.classList.contains("open");
+
+                // ปิดเมนูย่อยทั้งหมดก่อน
+                document.querySelectorAll(".side-dropdown").forEach(function (dropdown) {
+                    dropdown.classList.remove("open");
+
+                    const dropdownButton = dropdown.querySelector(".side-btn");
+
+                    if (dropdownButton) {
+                        dropdownButton.setAttribute("aria-expanded", "false");
+                    }
+                });
+
+                // เปิดเฉพาะเมนูที่คลิก
+                if (isOpening) {
+                    currentDropdown.classList.add("open");
+                    button.setAttribute("aria-expanded", "true");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

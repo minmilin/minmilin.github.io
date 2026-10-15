@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เที่ยวศรีราชา Discover Sriracha">
+
+    <title>MA SRI - RACHA | Travel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="travel.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <a href="index.html" class="sidebar-logo">
+            <img src="img/logo.png" alt="โลโก้ศรีราชา">
+            <h2>MA</h2>
+            <p>SRI - RACHA</p>
+            <span>TRAVEL GUIDE</span>
+        </a>
+
+        <nav class="sidebar-menu" aria-label="เมนูหลัก">
+            <a href="index.html" class="side-link">
+                🏠 <span>Home</span>
+            </a>
+
+            <div class="side-dropdown">
+                <button type="button" class="side-link side-btn"
+                    aria-expanded="false" aria-controls="story-submenu">
+                    📖 <span>Our Story</span>
+                    <span class="arrow">▾</span>
+                </button>
+                <div class="side-submenu" id="story-submenu">
+                    <a href="history.html">📜 <span>History</span></a>
+                </div>
+            </div>
+
+            <div class="side-dropdown open">
+                <button type="button" class="side-link side-btn active"
+                    aria-expanded="true" aria-controls="destination-submenu">
+                    📍 <span>Destination</span>
+                    <span class="arrow">▾</span>
+                </button>
+                <div class="side-submenu" id="destination-submenu">
+                    <a href="travel.html" class="current"
+                        aria-current="page">🏝️ <span>Travel</span></a>
+                    <a href="hotels.html">🏨 <span>Hotels</span></a>
+                    <a href="restaurants.html">🍽️ <span>Restaurant</span></a>
+                    <a href="cafes.html">☕ <span>Café</span></a>
+                </div>
+            </div>
+
+            <a href="video.html" class="side-link">
+                🎬 <span>Video</span>
+            </a>
+
+            <a href="contact.html" class="side-link">
+                📞 <span>Contact</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>FOLLOW OUR JOURNEY</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Pr.Srirachacity/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Facebook">ⓕ</a>
+                <a href="https://www.youtube.com/@srirachacity784"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="YouTube">▶</a>
+                <a href="https://www.srirachacity.go.th/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="เว็บไซต์เทศบาล">🌐</a>
+            </div>
+            <small>SRIRACHA MUNICIPALITY</small>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section class="history-hero travel-hero" id="top">
+            <img class="hero-image"
+                    src="img/Travel.png"
+                    alt="บรรยากาศเมืองศรีราชา">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <p class="hero-subtitle">EXPLORE THE BEAUTY OF</p>
+                <h1>
+                    TRAVEL
+                    <span>
+                        SRI - RACHA
+                    </span>
+                </h1>
+
+        <div class="hero-line"></div>
+            <h2>SEA • NATURE • EXPERIENCE</h2>
+                <p class="hero-description">
+                    เปิดประสบการณ์การท่องเที่ยว ค้นพบเสน่ห์ของธรรมชาติ
+                    ทะเล และสถานที่น่าสนใจในเมืองศรีราชา
+                    ไม่ว่าจะเป็นการพักผ่อนริมทะเล ชมสัตว์นานาชนิด
+                    หรือสัมผัสความสงบของธรรมชาติ
+                </p>
+
+        <div class="hero-buttons">
+            <a href="#destinations" class="btn-primary">
+                🚗 Trip To <span>➣</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="history-intro">
+    <div class="intro-inner">
+        <p class="section-eyebrow">
+            DO YOU WANT TO HANG OUT THIS WEEKEND?
+        </p>
+            <div class="title-line"></div>
+                <p>
+                    จากสวนสัตว์ท่ามกลางผืนป่า สู่เกาะกลางทะเล
+                    อ่างเก็บน้ำที่โอบล้อมด้วยขุนเขา และน้ำตกที่อุดมสมบูรณ์
+                    ศรีราชามีจุดหมายปลายทางหลากหลายให้คุณเลือก
+                    พร้อมออกไปสร้างความทรงจำในแบบของตัวเอง
+                </p>
+    </div>
+</section>
+
+<nav class="destination-nav"
+     id="destinations"
+     aria-label="เลือกสถานที่ท่องเที่ยว">
+
+    <a href="#travel-zoo">
+        <span class="nav-number">01 / WILDLIFE</span>
+        <strong>สวนสัตว์เปิดเขาเขียว</strong>
+        <small>Khao Kheow Open Zoo</small>
+    </a>
+
+    <a href="#travel-koh-loy">
+        <span class="nav-number">02 / SEA</span>
+        <strong>เกาะลอยศรีราชา</strong>
+        <small>Koh Loy Sriracha</small>
+    </a>
+
+    <a href="#travel-bangphra">
+        <span class="nav-number">03 / NATURE</span>
+        <strong>อ่างเก็บน้ำบางพระ</strong>
+        <small>Bang Phra Reservoir</small>
+    </a>
+
+    <a href="#travel-chan-ta-then">
+        <span class="nav-number">04 / WATERFALL</span>
+        <strong>น้ำตกชันตาเถร</strong>
+        <small>Chan Ta Then Waterfall</small>
+    </a>
+
+</nav>
+
+        <!-- 01 KHAO KHEOW -->
+        <section class="destination-section" id="travel-zoo">
+            <div class="destination-heading">
+                <div>
+                    <p class="eyebrow">
+                        01 · WILDLIFE EXPERIENCE
+                    </p>
+                    <h2>สวนสัตว์เปิดเขาเขียว</h2>
+                    <h3>Khao Kheow Open Zoo</h3>
+                </div>
+                <span class="destination-number">01</span>
+            </div>
+
+            <div class="feature-layout">
+                <div class="feature-image">
+                    <img src="img/KhaoKheow.webp"
+                         alt="สวนสัตว์เปิดเขาเขียว"
+                         loading="lazy">
+                    <div class="image-caption">
+                        WILDLIFE · NATURE · FAMILY
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <p class="feature-label">A WORLD OF WILDLIFE</p>
+                    <h3>เปิดโลกธรรมชาติ
+                        <br>
+                        พบสัตว์น่ารักใกล้ชิด
+                    </h3>
+
+                    <p>
+                        สวนสัตว์เปิดเขาเขียวเป็นแหล่งท่องเที่ยวขนาดใหญ่
+                        ท่ามกลางธรรมชาติ รวบรวมสัตว์นานาชนิดจากหลายพื้นที่
+                        เหมาะสำหรับครอบครัว ผู้รักสัตว์ และผู้ที่ต้องการเรียนรู้
+                        เกี่ยวกับธรรมชาติอย่างเพลิดเพลิน
+                    </p>
+                    <p>
+                        อีกหนึ่งไฮไลต์ที่หลายคนรู้จักคือ “หมูเด้ง”
+                        ฮิปโปโปเตมัสแคระที่ได้รับความสนใจจากนักท่องเที่ยว
+                        ทั้งชาวไทยและชาวต่างชาติ
+                    </p>
+
+                    <ul class="highlight-list">
+                        <li><strong>โซนฮิปโปแคระ:</strong> ชมหมูเด้งและเรียนรู้เรื่องฮิปโปโปเตมัสแคระ</li>
+                        <li><strong>หุบเขาเสือ:</strong> สำรวจพื้นที่จัดแสดงสัตว์ผู้ล่า</li>
+                        <li><strong>โซนเพนกวิน:</strong> ชมเพนกวินและกิจกรรมตามรอบของสวนสัตว์</li>
+                        <li><strong>แอฟริกันซาวันนา:</strong> พบยีราฟ ม้าลาย และสัตว์อีกหลายชนิด</li>
+                    </ul>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span>🕐 เวลาโดยทั่วไป</span>
+                            <strong>08:00–17:00 น.</strong>
+                        </div>
+                        <div class="info-item">
+                            <span>📍 สถานที่</span>
+                            <strong>อำเภอศรีราชา ชลบุรี</strong>
+                        </div>
+                        <div class="info-item">
+                            <span>⭐ เหมาะสำหรับ</span>
+                            <strong>ครอบครัวและคนรักสัตว์</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spot-section">
+                <div class="spot-heading">
+                    <span>MEET THE ANIMALS</span>
+                    <h3>ไฮไลต์สัตว์น่ารักที่ไม่ควรพลาด</h3>
+                </div>
+
+                <div class="spot-grid">
+                    <article class="spot-card">
+                        <img src="img/หมูเด้ง.jpg" alt="หมูเด้ง ฮิปโปแคระ"
+                             loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">01 · FAN FAVORITE</span>
+                            <h4>หมูเด้ง (ฮิปโปโปเตมัสแคระ)</h4>
+                            <p>
+                                สัตว์ดาวเด่นที่นักท่องเที่ยวชื่นชอบ
+                                ตรวจสอบพื้นที่จัดแสดงและเวลาเข้าชม
+                                จากประกาศของสวนสัตว์ก่อนเดินทาง
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="spot-card">
+                        <img src="img/แพนกวิน.jpg" alt="นกเพนกวินแมกเจลลัน"
+                             loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">02 · PENGUIN ZONE</span>
+                            <h4>นกเพนกวินแมกเจลลัน</h4>
+                            <p>
+                                ชมเพนกวินในพื้นที่จัดแสดง
+                                และตรวจสอบรอบกิจกรรมของสวนสัตว์
+                                ในวันที่วางแผนไปเที่ยว
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="spot-card">
+                        <img src="img/ยีราฟและผองเพื่อน.jpg"
+                             alt="ยีราฟและสัตว์ในโซนแอฟริกันซาวันนา"
+                             loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">03 · AFRICAN SAVANNA</span>
+                            <h4>ยีราฟและผองเพื่อน</h4>
+                            <p>
+                                สัมผัสบรรยากาศโซนสัตว์กินพืช
+                                และเรียนรู้เกี่ยวกับสัตว์จากทุ่งหญ้า
+                                แอฟริกา
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="gallery-section">
+                <div class="spot-heading">
+                    <span>PHOTO GALLERY</span>
+                    <h3>5 Check-in Spots</h3>
+                </div>
+                <div class="gallery-grid">
+                    <a href="img/เด้ง.jpg" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/เด้ง.jpg" alt="หมูเด้ง"
+                             loading="lazy">
+                        <span>หมูเด้ง</span>
+                    </a>
+                    <a href="img/แพน.jpg" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/แพน.jpg" alt="เพนกวิน"
+                             loading="lazy">
+                        <span>เพนกวิน</span>
+                    </a>
+                    <a href="img/ยีราฟ.jpg" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/ยีราฟ.jpg" alt="ยีราฟ"
+                             loading="lazy">
+                        <span>ยีราฟ</span>
+                    </a>
+                    <a href="img/ช้าง.jpg" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/ช้าง.jpg" alt="ช้าง"
+                             loading="lazy">
+                        <span>ช้าง</span>
+                    </a>
+                    <a href="img/จักร.png" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="img/จักร.png" alt="บรรยากาศสวนสัตว์"
+                            loading="lazy">
+                        <span>บรรยากาศธรรมชาติ</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <div class="map-heading">
+                    <h3>📍 สวนสัตว์เปิดเขาเขียว</h3>
+                    <p>ดูตำแหน่งและวางแผนการเดินทาง</p>
+                </div>
+                <iframe class="map-frame"
+                    src="https://www.google.com/maps?q=สวนสัตว์เปิดเขาเขียว&output=embed"
+                    title="แผนที่สวนสัตว์เปิดเขาเขียว"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+                <a class="map-link"
+                   href="https://www.google.com/maps/search/?api=1&query=สวนสัตว์เปิดเขาเขียว"
+                   target="_blank" rel="noopener noreferrer">
+                    เปิดแผนที่ขนาดใหญ่
+                </a>
+            </div>
+        </section>
+
+        <!-- 02 KOH LOY -->
+        <section class="destination-section" id="travel-koh-loy">
+            <div class="destination-heading">
+                <div>
+                    <p class="eyebrow">02 · COASTAL LANDMARK</p>
+                    <h2>เกาะลอยศรีราชา</h2>
+                    <h3>Koh Loy Sriracha</h3>
+                </div>
+                <span class="destination-number">02</span>
+            </div>
+
+            <div class="feature-layout">
+                <div class="feature-image">
+                    <img src="img/Koh Loi.jpg" alt="เกาะลอยศรีราชา"
+                         loading="lazy">
+                    <div class="image-caption">
+                        SEA VIEW · SUNSET · LOCAL CULTURE
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <p class="feature-label">THE CHARM OF THE SEA</p>
+                    <h3>แลนด์มาร์กริมทะเล<br>ที่มีเสน่ห์ในทุกช่วงเวลา</h3>
+
+                    <p>
+                        เกาะลอยเป็นหนึ่งในจุดหมายที่มีชื่อเสียงของศรีราชา
+                        เชื่อมต่อกับฝั่งด้วยสะพาน เป็นสถานที่สำหรับเดินเล่น
+                        พักผ่อน รับลมทะเล และชมทิวทัศน์ชายฝั่ง
+                    </p>
+                    <p>
+                        ภายในบริเวณมีวัดเกาะลอยและสถานที่สักการะ
+                        ที่ผู้คนนิยมเดินทางมาไหว้พระขอพร
+                        นอกจากนี้ยังสามารถเดินชมบรรยากาศริมทะเล
+                        และมองเห็นท่าเรือที่ใช้เดินทางไปเกาะสีชัง
+                    </p>
+
+                    <ul class="highlight-list">
+                        <li>เดินเล่นและออกกำลังกายบริเวณริมทะเล</li>
+                        <li>ชมพระอาทิตย์ตกและถ่ายภาพสะพานเกาะลอย</li>
+                        <li>สักการะสิ่งศักดิ์สิทธิ์และเยี่ยมชมวัดเกาะลอย</li>
+                        <li>ชมเรือโดยสารและบรรยากาศท่าเรือเกาะสีชัง</li>
+                    </ul>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span>🕐 ช่วงเวลาแนะนำ</span>
+                            <strong>เช้าหรือเย็น</strong>
+                        </div>
+                        <div class="info-item">
+                            <span>💰 ค่าเข้าพื้นที่</span>
+                            <strong>เข้าชมพื้นที่ทั่วไปฟรี</strong>
+                        </div>
+                        <div class="info-item">
+                            <span>⭐ จุดเด่น</span>
+                            <strong>ทะเลและวิวพระอาทิตย์ตก</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spot-section">
+                <div class="spot-heading">
+                    <span>PLACES OF INTEREST</span>
+                    <h3>จุดแวะชมและสักการะ</h3>
+                </div>
+
+                <div class="spot-grid">
+                    <article class="spot-card">
+                        <img src="img/เจ้าแม่กวนอิม.jpg"
+                             alt="เจ้าแม่กวนอิม" loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">01 · WORSHIP</span>
+                            <h4>เจ้าแม่กวนอิม</h4>
+                            <p>
+                                สถานที่สักการะเพื่อความเป็นสิริมงคล
+                                โปรดตรวจสอบเวลาเข้าชมพื้นที่จริง
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="spot-card">
+                        <img src="img/7.webp" alt="พระพิฆเนศ"
+                             loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">02 · SACRED PLACE</span>
+                            <h4>พระพิฆเนศ</h4>
+                            <p>
+                                จุดสักการะที่ผู้ศรัทธานิยมมาขอพร
+                                ตามความเชื่อส่วนบุคคล
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="spot-card">
+                        <img src="img/กวนอู.jpg"
+                             alt="เทพเจ้ากวนอูหยกขาว" loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">03 · CULTURE</span>
+                            <h4>เทพเจ้ากวนอูหยกขาว</h4>
+                            <p>
+                                เรียนรู้ความเชื่อและวัฒนธรรม
+                                ที่เป็นส่วนหนึ่งของชุมชนศรีราชา
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="spot-card">
+                        <img src="img/ต้าเซียน.jpeg" alt="เทพเจ้าหวังต้าเซียน"
+                             loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">04 · SACRED PLACE</span>
+                            <h4>พระพิฆเนศ</h4>
+                            <p>
+                                จุดสักการะที่ผู้ศรัทธานิยมมาขอพร
+                                ตามความเชื่อส่วนบุคคล
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="gallery-section">
+                <div class="spot-heading">
+                    <span>PHOTO GALLERY</span>
+                    <h3>5 Check-in Spots</h3>
+                </div>
+                <div class="gallery-grid">
+                    <a href="img/3.webp" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/3.webp" alt="เกาะลอย"
+                             loading="lazy">
+                        <span>เกาะลอย</span>
+                    </a>
+                    <a href="img/วัดเกาะลอย.avif" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/วัดเกาะลอย.avif" alt="วัดเกาะลอย"
+                             loading="lazy">
+                        <span>วัดเกาะลอย</span>
+                    </a>
+                    <a href="img/เรือ.avif" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/เรือ.avif" alt="เรือเกาะลอย"
+                             loading="lazy">
+                        <span>ท่าเรือ</span>
+                    </a>
+                    <a href="img/sun.jpg" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/sun.jpg" alt="พระอาทิตย์ตก"
+                             loading="lazy">
+                        <span>พระอาทิตย์ตก</span>
+                    </a>
+                    <a href="img/bg.4.avif" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/bg.4.avif" alt="บรรยากาศเกาะลอย"
+                             loading="lazy">
+                        <span>บรรยากาศริมทะเล</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <div class="map-heading">
+                    <h3>📍 เกาะลอยศรีราชา</h3>
+                    <p>แลนด์มาร์กริมทะเลและท่าเรือเกาะสีชัง</p>
+                </div>
+                <iframe class="map-frame"
+                    src="https://www.google.com/maps?q=เกาะลอย%20ศรีราชา%20ชลบุรี&output=embed"
+                    title="แผนที่เกาะลอยศรีราชา"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+                <a class="map-link"
+                   href="https://www.google.com/maps/search/?api=1&query=เกาะลอย%20ศรีราชา"
+                   target="_blank" rel="noopener noreferrer">
+                    เปิดแผนที่ขนาดใหญ่ 
+                </a>
+            </div>
+        </section>
+
+        <!-- 03 BANG PHRA -->
+        <section class="destination-section" id="travel-bangphra">
+            <div class="destination-heading">
+                <div>
+                    <p class="eyebrow">03 · GREEN ESCAPE</p>
+                    <h2>อ่างเก็บน้ำบางพระ</h2>
+                    <h3>Bang Phra Reservoir, Sriracha</h3>
+                </div>
+                <span class="destination-number">03</span>
+            </div>
+
+            <div class="feature-layout">
+                <div class="feature-image">
+                    <img src="img/อ่างน้ำ.webp"
+                         alt="อ่างเก็บน้ำบางพระ"
+                         loading="lazy">
+                    <div class="image-caption">
+                        LAKE VIEW · CYCLING · NATURE
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <p class="feature-label">BREATHE IN NATURE</p>
+                    <h3>หลีกหนีความวุ่นวาย<br>มาพักใจกับธรรมชาติ</h3>
+
+                    <p>
+                        อ่างเก็บน้ำบางพระเป็นแหล่งน้ำขนาดใหญ่
+                        ที่รายล้อมด้วยภูเขาและพื้นที่สีเขียว
+                        เหมาะสำหรับผู้ที่ต้องการพักผ่อนท่ามกลางธรรมชาติ
+                        และใช้เวลาอย่างช้าๆ ในวันหยุด
+                    </p>
+                    <p>
+                        นักท่องเที่ยวสามารถชมวิวผืนน้ำ เดินเล่น
+                        ปั่นจักรยาน และถ่ายภาพทิวทัศน์
+                        โดยเฉพาะในช่วงเช้าที่อากาศสดชื่น
+                        หรือช่วงเย็นที่แสงแดดอ่อนลง
+                    </p>
+
+                    <ul class="highlight-list">
+                        <li>ชมทิวทัศน์ผืนน้ำและแนวภูเขา</li>
+                        <li>ปั่นจักรยานและออกกำลังกายตามเส้นทางที่อนุญาต</li>
+                        <li>ถ่ายภาพดอกตะแบกสีม่วงในช่วงฤดูกาลออกดอก</li>
+                        <li>ชมธรรมชาติและดูนกในพื้นที่ที่เปิดให้เข้าชม</li>
+                    </ul>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span>🕐 ช่วงเวลาแนะนำ</span>
+                            <strong>เช้าตรู่และช่วงเย็น</strong>
+                        </div>
+                        <div class="info-item">
+                            <span>🌿 กิจกรรม</span>
+                            <strong>ชมวิวและปั่นจักรยาน</strong>
+                        </div>
+                        <div class="info-item">
+                            <span>⭐ จุดเด่น</span>
+                            <strong>ผืนน้ำและแนวภูเขา</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spot-section">
+                <div class="spot-heading">
+                    <span>EXPLORE THE AREA</span>
+                    <h3>จุดชมวิวและธรรมชาติน่าสนใจ</h3>
+                </div>
+
+                <div class="spot-grid">
+                    <article class="spot-card">
+                        <img src="img/Bang Phra Reservoir.jpg"
+                             alt="วิวอ่างเก็บน้ำบางพระ" loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">01 · LAKE VIEW</span>
+                            <h4>อ่างเก็บน้ำบางพระ</h4>
+                            <p>
+                                จุดชมผืนน้ำกว้างและแนวภูเขา
+                                บรรยากาศเปิดโล่ง เหมาะสำหรับนั่งพัก
+                                และถ่ายภาพธรรมชาติ
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="spot-card">
+                        <img src="img/ดอกพระตะแบก.webp"
+                             alt="ถนนดอกตะแบกสีม่วง" loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">02 · SEASONAL BEAUTY</span>
+                            <h4>ถนนดอกตะแบกสีม่วง</h4>
+                            <p>
+                                มุมถ่ายภาพในช่วงฤดูดอกไม้บาน
+                                เมื่อดอกตะแบกสร้างสีสัน
+                                ให้กับเส้นทางธรรมชาติ
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="spot-card">
+                        <img src="img/หน่วยพิทักษ์.jpg"
+                             alt="หน่วยพิทักษ์ป่าชั่วคราวเนินวังหิน"
+                             loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">03 · WILDLIFE</span>
+                            <h4>หน่วยพิทักษ์ป่าชั่วคราว เนินวังหิน</h4>
+                            <p>
+                                พื้นที่ธรรมชาติสำหรับผู้สนใจชมทิวทัศน์
+                                ดูนก และศึกษาระบบนิเวศ
+                                โดยควรปฏิบัติตามข้อกำหนดของพื้นที่
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="gallery-section">
+                <div class="spot-heading">
+                    <span>PHOTO GALLERY</span>
+                    <h3>5 Check-in Spots</h3>
+                </div>
+                <div class="gallery-grid">
+                    <a href="img/อ่าง.webp" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/อ่าง.webp" alt="อ่างเก็บน้ำ"
+                             loading="lazy">
+                        <span>ผืนน้ำบางพระ</span>
+                    </a>
+                    <a href="img/ดอกไม้.jpg" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/ดอกไม้.jpg" alt="ดอกไม้"
+                             loading="lazy">
+                        <span>ดอกไม้</span>
+                    </a>
+                    <a href="img/นก.jpg" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/นก.jpg" alt="นกในธรรมชาติ"
+                             loading="lazy">
+                        <span>ดูนก</span>
+                    </a>
+                    <a href="img/กัลป.jpg" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/กัลป.jpg" alt="ธรรมชาติบางพระ"
+                             loading="lazy">
+                        <span>ธรรมชาติ</span>
+                    </a>
+                    <a href="img/หนาว.jpg" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/หนาว.jpg"
+                             alt="บรรยากาศอ่างเก็บน้ำ"
+                             loading="lazy">
+                        <span>วิวพักผ่อน</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <div class="map-heading">
+                    <h3>📍 อ่างเก็บน้ำบางพระ</h3>
+                    <p>แหล่งพักผ่อนและชมธรรมชาติในจังหวัดชลบุรี</p>
+                </div>
+                <iframe class="map-frame"
+                    src="https://www.google.com/maps?q=อ่างเก็บน้ำบางพระ%20ชลบุรี&output=embed"
+                    title="แผนที่อ่างเก็บน้ำบางพระ"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+                <a class="map-link"
+                   href="https://www.google.com/maps/search/?api=1&query=อ่างเก็บน้ำบางพระ%20ชลบุรี"
+                   target="_blank" rel="noopener noreferrer">
+                    เปิดแผนที่ขนาดใหญ่ ↗
+                </a>
+            </div>
+        </section>
+
+        <!-- 04 CHAN TA THEN -->
+        <section class="destination-section" id="travel-chan-ta-then">
+            <div class="destination-heading">
+                <div>
+                    <p class="eyebrow">04 · WATERFALL ADVENTURE</p>
+                    <h2>น้ำตกชันตาเถร</h2>
+                    <h3>Namtok Chan Ta Then Waterfall</h3>
+                </div>
+                <span class="destination-number">04</span>
+            </div>
+
+            <div class="feature-layout">
+                <div class="feature-image">
+                    <img src="img/ป้ายชัน.jpg"
+                         alt="น้ำตกชันตาเถร"
+                         loading="lazy">
+                    <div class="image-caption">
+                        WATERFALL · FOREST · ECO TOURISM
+                    </div>
+                </div>
+
+                <div class="feature-content">
+                    <p class="feature-label">DISCOVER THE FOREST</p>
+                    <h3>สัมผัสความร่มรื่น<br>ท่ามกลางผืนป่าและสายน้ำ</h3>
+
+                    <p>
+                        น้ำตกชันตาเถรเป็นแหล่งท่องเที่ยวทางธรรมชาติ
+                        ในพื้นที่ป่าเขียวชอุ่ม เหมาะสำหรับผู้ที่ต้องการ
+                        เดินชมธรรมชาติ ถ่ายภาพ และเรียนรู้ความหลากหลาย
+                        ของสิ่งมีชีวิตในระบบนิเวศป่า
+                    </p>
+                    <p>
+                        ในช่วงที่มีฝนตกและมีน้ำเพียงพอ
+                        สายน้ำและลำธารจะช่วยเพิ่มความสดชื่นให้กับพื้นที่
+                        อย่างไรก็ตาม ควรตรวจสอบสถานะการเปิดเข้าชม
+                        และคำแนะนำด้านความปลอดภัยก่อนเดินทางทุกครั้ง
+                    </p>
+
+                    <ul class="highlight-list">
+                        <li>เดินชมเส้นทางธรรมชาติในบริเวณที่เปิดให้เข้าชม</li>
+                        <li>ถ่ายภาพน้ำตก ลำธาร และพรรณไม้</li>
+                        <li>สังเกตนก ผีเสื้อ และสัตว์ป่าจากระยะที่เหมาะสม</li>
+                        <li>เรียนรู้การอนุรักษ์ธรรมชาติและไม่ทิ้งขยะในพื้นที่</li>
+                    </ul>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span>🕐 เวลาเข้าชม</span>
+                            <strong>ตรวจสอบประกาศก่อนเดินทาง</strong>
+                        </div>
+                        <div class="info-item">
+                            <span>🌧️ ช่วงธรรมชาติสวย</span>
+                            <strong>ช่วงมีน้ำและฝนเหมาะสม</strong>
+                        </div>
+                        <div class="info-item">
+                            <span>⭐ จุดเด่น</span>
+                            <strong>ป่าเขาและสายน้ำ</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spot-section">
+                <div class="spot-heading">
+                    <span>NATURE HIGHLIGHTS</span>
+                    <h3>ไฮไลต์ของน้ำตกชันตาเถร</h3>
+                </div>
+
+                <div class="spot-grid">
+                    <article class="spot-card">
+                        <img src="img/เห็ด.jpg"
+                             alt="ธรรมชาติบริเวณน้ำตกชันตาเถร"
+                             loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">01 · WATERFALL</span>
+                            <h4>น้ำตกชันตาเถร</h4>
+                            <p>
+                                พื้นที่พักผ่อนท่ามกลางต้นไม้และลำธาร
+                                เหมาะสำหรับเดินชมธรรมชาติ
+                                ในเส้นทางที่กำหนด
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="spot-card">
+                        <img src="img/สี่หลั่น.jpg"
+                             alt="ชั้นที่ 4 สี่หลั่น" loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">02 · WATERFALL CASCADE</span>
+                            <h4>ชั้นที่ 4 (สี่หลั่น)</h4>
+                            <p>
+                                บริเวณชั้นน้ำตกที่มีโขดหินและสายน้ำ
+                                ควรเดินตามเส้นทางที่อนุญาต
+                                และหลีกเลี่ยงพื้นที่ลื่น
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="spot-card">
+                        <img src="img/นกก๊อก.jpg"
+                             alt="สัตว์ป่าและนกในธรรมชาติ"
+                             loading="lazy">
+                        <div class="spot-body">
+                            <span class="spot-rank">03 · WILDLIFE</span>
+                            <h4>สัตว์ป่าและนกนานาชนิด</h4>
+                            <p>
+                                พื้นที่ป่ามีสิ่งมีชีวิตหลากหลาย
+                                เช่น นก ผีเสื้อ และสัตว์ขนาดเล็ก
+                                ควรชมอย่างสงบและไม่รบกวนสัตว์
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="gallery-section">
+                <div class="spot-heading">
+                    <span>PHOTO GALLERY</span>
+                    <h3>5 Check-in Spots</h3>
+                </div>
+                <div class="gallery-grid">
+                    <a href="img/ตาเถร.jpg" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/ตาเถร.jpg" alt="น้ำตกชันตาเถร"
+                             loading="lazy">
+                        <span>น้ำตกชันตาเถร</span>
+                    </a>
+                    <a href="img/นกเงิน.jpg" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/นกเงิน.jpg" alt="นกในธรรมชาติ"
+                             loading="lazy">
+                        <span>นกในป่า</span>
+                    </a>
+                    <a href="img/ค่าง.webp" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/ค่าง.webp" alt="ค่าง"
+                             loading="lazy">
+                        <span>สัตว์ป่า</span>
+                    </a>
+                    <a href="img/ผีเสื้อ.jpg" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="img/ผีเสื้อ.jpg" alt="ผีเสื้อ"
+                             loading="lazy">
+                        <span>ผีเสื้อ</span>
+                    </a>
+                    <a href="img/เส้นทาง.jpg" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="img/เส้นทาง.jpg" alt="เส้นทางธรรมชาติบริเวณน้ำตก"
+                        loading="lazy">
+                        <span>เส้นทางธรรมชาติ</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <div class="map-heading">
+                    <h3>📍 น้ำตกชันตาเถร</h3>
+                    <p>ตรวจสอบเส้นทางและสถานะการเปิดเข้าชมก่อนเดินทาง</p>
+                </div>
+                <iframe class="map-frame"
+                    src="https://www.google.com/maps?q=น้ำตกชันตาเถร%20ชลบุรี&output=embed"
+                    title="แผนที่น้ำตกชันตาเถร"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+                <a class="map-link"
+                   href="https://www.google.com/maps/search/?api=1&query=น้ำตกชันตาเถร%20ชลบุรี"
+                   target="_blank" rel="noopener noreferrer">
+                    เปิดแผนที่ขนาดใหญ่ 
+                </a>
+            </div>
+        </section>
+
+        <footer class="history-footer">
+            <a href="index.html" class="footer-logo">MA SRI - RACHA</a>
+            <p class="footer-tagline">
+                Travel • Hotel • Restaurant • Café
+            </p>
+            <p class="copyright">
+                © 2026 เว็บไซต์แนะนำสถานที่ท่องเที่ยวเมืองศรีราชา
+            </p>
+        </footer>
+    </main>
+
+    <script>
+    // SIDEBAR DROPDOWN
+    const dropdownButtons = document.querySelectorAll(".side-btn");
+
+    dropdownButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            const dropdown = button.closest(".side-dropdown");
+            const isOpening = !dropdown.classList.contains("open");
+
+            document.querySelectorAll(".side-dropdown").forEach(function (item) {
+                item.classList.remove("open");
+
+                const itemButton = item.querySelector(".side-btn");
+
+                if (itemButton) {
+                    itemButton.setAttribute("aria-expanded", "false");
+                }
+            });
+
+            if (isOpening) {
+                dropdown.classList.add("open");
+                button.setAttribute("aria-expanded", "true");
+            }
+        });
+    });
+
+    // BACK TO TOP
+    const backTop = document.getElementById("backTop");
+
+    if (backTop) {
+        function toggleBackTop() {
+            backTop.classList.toggle(
+                "visible",
+                window.scrollY > 400
+            );
+        }
+
+        window.addEventListener("scroll", toggleBackTop, {
+            passive: true
+        });
+
+        toggleBackTop();
+
+        backTop.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+</script>
+</body>
+</html>
